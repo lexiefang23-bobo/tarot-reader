@@ -1,0 +1,9 @@
+{
+  "name": "tarot-reader",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LLM-powered tarot reading web app — two-stage pipeline grounded in a 78-card Rider-Waite-Smith + Golden Dawn knowledge base",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" }
+}

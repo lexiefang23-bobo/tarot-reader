@@ -1,0 +1,3010 @@
+[
+  {
+    "id": "major-00",
+    "name": "The Fool",
+    "arcanaType": "major",
+    "suit": null,
+    "number": 0,
+    "image": "tarot-cards/00_Fool.jpg",
+    "uprightKeywords": [
+      "beginnings",
+      "innocence",
+      "adventure",
+      "freedom",
+      "spontaneity"
+    ],
+    "reversedKeywords": [
+      "recklessness",
+      "naivety",
+      "foolishness",
+      "risk",
+      "chaos"
+    ],
+    "shortMeaning": "A new journey begins with open heart and fearless spirit, trusting the universe to catch you.",
+    "reversedMeaning": "Reckless leaps without looking risk leading you off the cliff of your own making.",
+    "nameZh": "愚者",
+    "goldenDawn": {
+      "hebrewLetter": "Aleph (א)",
+      "treePath": "11th Path",
+      "pathConnects": "Kether–Chokmah",
+      "astrological": "Air (element)",
+      "gdTitle": "The Spirit of Aether"
+    },
+    "rws": {
+      "scene": "A youth in embroidered clothes steps toward a cliff edge, a white rose in one hand and a small bundle on a stick over the shoulder, a little white dog leaping at the heels, sun blazing behind.",
+      "symbols": [
+        "the unseen cliff edge — the risk he has not yet looked down at",
+        "the white rose — innocence, wanting nothing in particular",
+        "the small dog — instinct, barking a warning he may or may not heed"
+      ]
+    }
+  },
+  {
+    "id": "major-01",
+    "name": "The Magician",
+    "arcanaType": "major",
+    "suit": null,
+    "number": 1,
+    "image": "tarot-cards/01_Magician.jpg",
+    "uprightKeywords": [
+      "willpower",
+      "skill",
+      "manifestation",
+      "resourcefulness",
+      "power"
+    ],
+    "reversedKeywords": [
+      "manipulation",
+      "untapped potential",
+      "deception",
+      "illusion",
+      "trickery"
+    ],
+    "shortMeaning": "You have all the tools you need — channel your will to transform intention into reality.",
+    "reversedMeaning": "Potential sits unused or is being twisted toward manipulation and self-deception.",
+    "nameZh": "魔術師",
+    "goldenDawn": {
+      "hebrewLetter": "Beth (ב)",
+      "treePath": "12th Path",
+      "pathConnects": "Kether–Binah",
+      "astrological": "Mercury",
+      "gdTitle": "The Magus of Power"
+    },
+    "rws": {
+      "scene": "A figure stands at a table bearing wand, cup, sword and pentacle, one arm raised to the sky holding a wand and the other pointing to the ground, an infinity sign above the head, roses and lilies around.",
+      "symbols": [
+        "as above, so below — channelling something larger into an actual act",
+        "all four suits on the table — every tool is already available",
+        "the lemniscate — power that renews as long as it keeps moving"
+      ]
+    }
+  },
+  {
+    "id": "major-02",
+    "name": "The High Priestess",
+    "arcanaType": "major",
+    "suit": null,
+    "number": 2,
+    "image": "tarot-cards/02_High_Priestess.jpg",
+    "uprightKeywords": [
+      "intuition",
+      "mystery",
+      "inner knowing",
+      "subconscious",
+      "stillness"
+    ],
+    "reversedKeywords": [
+      "secrets",
+      "disconnection",
+      "repressed feelings",
+      "confusion",
+      "blocked intuition"
+    ],
+    "shortMeaning": "The answers you seek dwell in silence — trust your deep inner knowing over surface logic.",
+    "reversedMeaning": "Secrets withheld or intuition suppressed create a fog that distorts your path forward.",
+    "nameZh": "女祭司",
+    "goldenDawn": {
+      "hebrewLetter": "Gimel (ג)",
+      "treePath": "13th Path",
+      "pathConnects": "Kether–Tiphareth",
+      "astrological": "The Moon",
+      "gdTitle": "The Priestess of the Silver Star"
+    },
+    "rws": {
+      "scene": "A veiled woman sits between a black pillar and a white one, a crescent moon at her feet, a scroll marked TORA half-hidden in her lap, a pomegranate curtain behind her.",
+      "symbols": [
+        "the curtain — what she knows is behind her, not spoken",
+        "the half-hidden scroll — knowledge withheld until you are ready",
+        "the two pillars — she sits at the threshold, not on either side"
+      ]
+    }
+  },
+  {
+    "id": "major-03",
+    "name": "The Empress",
+    "arcanaType": "major",
+    "suit": null,
+    "number": 3,
+    "image": "tarot-cards/03_Empress.jpg",
+    "uprightKeywords": [
+      "abundance",
+      "fertility",
+      "nurturing",
+      "nature",
+      "creativity"
+    ],
+    "reversedKeywords": [
+      "dependence",
+      "smothering",
+      "creative block",
+      "neglect",
+      "insecurity"
+    ],
+    "shortMeaning": "Lush abundance flows when you honor your creative power and nurture what you love.",
+    "reversedMeaning": "Creative stagnation or over-nurturing others at the expense of your own flourishing.",
+    "nameZh": "皇后",
+    "goldenDawn": {
+      "hebrewLetter": "Daleth (ד)",
+      "treePath": "14th Path",
+      "pathConnects": "Chokmah–Binah",
+      "astrological": "Venus",
+      "gdTitle": "The Daughter of the Mighty Ones"
+    },
+    "rws": {
+      "scene": "A woman reclines on cushions in a field of ripening wheat, a stream and forest behind, a crown of twelve stars on her head and a heart-shaped shield bearing Venus at her side.",
+      "symbols": [
+        "the ripe wheat — something is already growing and needs no forcing",
+        "the flowing stream — pleasure, fertility, ease",
+        "cushions rather than a stone throne — authority through abundance, not force"
+      ]
+    }
+  },
+  {
+    "id": "major-04",
+    "name": "The Emperor",
+    "arcanaType": "major",
+    "suit": null,
+    "number": 4,
+    "image": "tarot-cards/04_Emperor.jpg",
+    "uprightKeywords": [
+      "authority",
+      "structure",
+      "stability",
+      "protection",
+      "leadership"
+    ],
+    "reversedKeywords": [
+      "domination",
+      "rigidity",
+      "control issues",
+      "tyranny",
+      "lack of discipline"
+    ],
+    "shortMeaning": "Establish firm foundations and assert your authority to build lasting order and security.",
+    "reversedMeaning": "Rigid control or abused authority creates oppressive structures that stifle growth.",
+    "nameZh": "皇帝",
+    "goldenDawn": {
+      "hebrewLetter": "Heh (ה)",
+      "treePath": "15th Path",
+      "pathConnects": "Chokmah–Tiphareth",
+      "astrological": "Aries",
+      "gdTitle": "The Son of the Morning, Chief among the Mighty"
+    },
+    "rws": {
+      "scene": "A stern bearded man sits on a stone throne carved with rams' heads, an ankh sceptre in hand, armour showing beneath his red robe, barren mountains behind.",
+      "symbols": [
+        "the stone throne — order that does not move for feelings",
+        "the barren mountains — the cost of a life built on structure",
+        "armour under the robe — always braced, never quite at rest"
+      ]
+    }
+  },
+  {
+    "id": "major-05",
+    "name": "The Hierophant",
+    "arcanaType": "major",
+    "suit": null,
+    "number": 5,
+    "image": "tarot-cards/05_Hierophant.jpg",
+    "uprightKeywords": [
+      "tradition",
+      "conformity",
+      "spiritual guidance",
+      "institutions",
+      "morality"
+    ],
+    "reversedKeywords": [
+      "rebellion",
+      "unconventionality",
+      "subversiveness",
+      "questioning authority",
+      "freedom"
+    ],
+    "shortMeaning": "Seek wisdom through established traditions, spiritual mentors, or sacred community.",
+    "reversedMeaning": "Breaking free from dogma invites authentic spiritual discovery outside conventional boundaries.",
+    "nameZh": "教皇",
+    "goldenDawn": {
+      "hebrewLetter": "Vav (ו)",
+      "treePath": "16th Path",
+      "pathConnects": "Chokmah–Chesed",
+      "astrological": "Taurus",
+      "gdTitle": "The Magus of the Eternal Gods"
+    },
+    "rws": {
+      "scene": "A robed teacher sits between two pillars wearing a triple crown, one hand raised in blessing, two tonsured acolytes kneeling before him, crossed keys at his feet.",
+      "symbols": [
+        "the crossed keys — access granted through an institution, not found alone",
+        "the two kneeling students — knowledge passed down a line",
+        "the raised hand — sanction, permission, orthodoxy"
+      ]
+    }
+  },
+  {
+    "id": "major-06",
+    "name": "The Lovers",
+    "arcanaType": "major",
+    "suit": null,
+    "number": 6,
+    "image": "tarot-cards/06_Lovers.jpg",
+    "uprightKeywords": [
+      "love",
+      "union",
+      "alignment",
+      "choices",
+      "relationships"
+    ],
+    "reversedKeywords": [
+      "disharmony",
+      "imbalance",
+      "misalignment",
+      "poor choices",
+      "avoidance"
+    ],
+    "shortMeaning": "A profound choice or deep union calls you to align your values with your heart's truth.",
+    "reversedMeaning": "Misaligned values create discord in relationships and lead to choices you may regret.",
+    "nameZh": "戀人",
+    "goldenDawn": {
+      "hebrewLetter": "Zayin (ז)",
+      "treePath": "17th Path",
+      "pathConnects": "Binah–Tiphareth",
+      "astrological": "Gemini",
+      "gdTitle": "The Children of the Voice, the Oracle of the Mighty Gods"
+    },
+    "rws": {
+      "scene": "A naked man and woman stand beneath a great winged angel in a blazing sun; behind her a serpent coils in a fruit tree, behind him a tree of flames, a mountain rising between them.",
+      "symbols": [
+        "the angel above — the choice is being witnessed by something larger",
+        "the two trees — desire on one side, will on the other",
+        "the man looks at her, she looks up — they are not facing the same way"
+      ]
+    }
+  },
+  {
+    "id": "major-07",
+    "name": "The Chariot",
+    "arcanaType": "major",
+    "suit": null,
+    "number": 7,
+    "image": "tarot-cards/07_Chariot.jpg",
+    "uprightKeywords": [
+      "determination",
+      "control",
+      "victory",
+      "willpower",
+      "ambition"
+    ],
+    "reversedKeywords": [
+      "aggression",
+      "lack of direction",
+      "scattered energy",
+      "powerlessness",
+      "defeat"
+    ],
+    "shortMeaning": "Harness opposing forces with iron will and charge forward toward triumphant victory.",
+    "reversedMeaning": "Without direction or self-control, conflicting impulses scatter your momentum and derail success.",
+    "nameZh": "戰車",
+    "goldenDawn": {
+      "hebrewLetter": "Cheth (ח)",
+      "treePath": "18th Path",
+      "pathConnects": "Binah–Geburah",
+      "astrological": "Cancer",
+      "gdTitle": "The Child of the Power of the Waters, Lord of the Triumph of Light"
+    },
+    "rws": {
+      "scene": "An armoured figure stands in a chariot drawn by one black sphinx and one white, a canopy of stars overhead, a walled city behind, crescent moons on the shoulders.",
+      "symbols": [
+        "black and white sphinxes — opposing drives yoked to one direction",
+        "no reins in his hands — control held by will, not by force",
+        "the city behind — he has already left safety"
+      ]
+    }
+  },
+  {
+    "id": "major-08",
+    "name": "Strength",
+    "arcanaType": "major",
+    "suit": null,
+    "number": 8,
+    "image": "tarot-cards/08_Strength.jpg",
+    "uprightKeywords": [
+      "courage",
+      "patience",
+      "compassion",
+      "inner strength",
+      "taming"
+    ],
+    "reversedKeywords": [
+      "weakness",
+      "self-doubt",
+      "raw emotion",
+      "insecurity",
+      "cowardice"
+    ],
+    "shortMeaning": "True power comes not from force but from gentle courage and compassionate self-mastery.",
+    "reversedMeaning": "Self-doubt and unmastered emotions reveal themselves as the real obstacle to overcome.",
+    "nameZh": "力量",
+    "goldenDawn": {
+      "hebrewLetter": "Teth (ט)",
+      "treePath": "19th Path",
+      "pathConnects": "Chesed–Geburah",
+      "astrological": "Leo",
+      "gdTitle": "The Daughter of the Flaming Sword, Leader of the Lion"
+    },
+    "rws": {
+      "scene": "A woman in white calmly closes her hands on a lion's jaws, an infinity sign above her head, a garland of flowers looping between them.",
+      "symbols": [
+        "hands on the jaws, not a weapon — mastery by patience",
+        "the flower garland — the beast is led, not beaten",
+        "the lion leans in — the wild part is not the enemy"
+      ]
+    }
+  },
+  {
+    "id": "major-09",
+    "name": "The Hermit",
+    "arcanaType": "major",
+    "suit": null,
+    "number": 9,
+    "image": "tarot-cards/09_Hermit.jpg",
+    "uprightKeywords": [
+      "solitude",
+      "introspection",
+      "guidance",
+      "inner wisdom",
+      "retreat"
+    ],
+    "reversedKeywords": [
+      "isolation",
+      "loneliness",
+      "withdrawal",
+      "lost",
+      "anti-social"
+    ],
+    "shortMeaning": "Step back from the noise of the world to find the lantern of wisdom that lights your path.",
+    "reversedMeaning": "Excessive isolation becomes a prison rather than a sanctuary for genuine self-discovery.",
+    "nameZh": "隱者",
+    "goldenDawn": {
+      "hebrewLetter": "Yod (י)",
+      "treePath": "20th Path",
+      "pathConnects": "Chesed–Tiphareth",
+      "astrological": "Virgo",
+      "gdTitle": "The Prophet of the Eternal, the Magus of the Voice of Light"
+    },
+    "rws": {
+      "scene": "An old man in a grey hood stands alone on a snowy peak, holding up a lantern containing a six-pointed star, a staff in his other hand.",
+      "symbols": [
+        "the lantern — a light small enough for one person only",
+        "the snowy summit — the isolation the search costs",
+        "the staff — this is a chosen walk, not exile"
+      ]
+    }
+  },
+  {
+    "id": "major-10",
+    "name": "Wheel of Fortune",
+    "arcanaType": "major",
+    "suit": null,
+    "number": 10,
+    "image": "tarot-cards/10_Wheel_of_Fortune.jpg",
+    "uprightKeywords": [
+      "luck",
+      "fate",
+      "turning point",
+      "change",
+      "cycles"
+    ],
+    "reversedKeywords": [
+      "bad luck",
+      "resistance",
+      "no control",
+      "misfortune",
+      "stagnation"
+    ],
+    "shortMeaning": "The wheel turns and fortune shifts — embrace the cycles of change as the universe realigns.",
+    "reversedMeaning": "Resisting inevitable change keeps the wheel stuck, prolonging the difficult phase unnecessarily.",
+    "nameZh": "命運之輪",
+    "goldenDawn": {
+      "hebrewLetter": "Kaph (כ)",
+      "treePath": "21st Path",
+      "pathConnects": "Chesed–Netzach",
+      "astrological": "Jupiter",
+      "gdTitle": "The Lord of the Forces of Life"
+    },
+    "rws": {
+      "scene": "A great wheel marked with letters and alchemical signs turns in the sky; a sphinx with a sword sits on top, a serpent slides down one side, a jackal-headed figure rises on the other, four winged creatures read books in the corners.",
+      "symbols": [
+        "the turning wheel — the moment is moving whether you act or not",
+        "rising and falling figures — no position on the wheel is permanent",
+        "the still sphinx at the top — the centre is the only steady place"
+      ]
+    }
+  },
+  {
+    "id": "major-11",
+    "name": "Justice",
+    "arcanaType": "major",
+    "suit": null,
+    "number": 11,
+    "image": "tarot-cards/11_Justice.jpg",
+    "uprightKeywords": [
+      "fairness",
+      "truth",
+      "cause and effect",
+      "law",
+      "accountability"
+    ],
+    "reversedKeywords": [
+      "injustice",
+      "dishonesty",
+      "bias",
+      "unfairness",
+      "avoidance"
+    ],
+    "shortMeaning": "Truth prevails and every action meets its consequence — stand in integrity and trust the scales.",
+    "reversedMeaning": "Dishonesty or avoided accountability creates karmic imbalance that will demand correction.",
+    "nameZh": "正義",
+    "goldenDawn": {
+      "hebrewLetter": "Lamed (ל)",
+      "treePath": "22nd Path",
+      "pathConnects": "Geburah–Tiphareth",
+      "astrological": "Libra",
+      "gdTitle": "The Daughter of the Lords of Truth, Ruler of the Balance"
+    },
+    "rws": {
+      "scene": "A crowned figure sits between two pillars, an upright sword in the right hand and level scales in the left, a purple veil behind.",
+      "symbols": [
+        "the raised sword — a decision will be made and it will cut",
+        "the level scales — consequence measured, not forgiven",
+        "the veil behind — the whole picture is not visible to you"
+      ]
+    }
+  },
+  {
+    "id": "major-12",
+    "name": "The Hanged Man",
+    "arcanaType": "major",
+    "suit": null,
+    "number": 12,
+    "image": "tarot-cards/12_Hanged_Man.jpg",
+    "uprightKeywords": [
+      "surrender",
+      "new perspective",
+      "pause",
+      "sacrifice",
+      "suspension"
+    ],
+    "reversedKeywords": [
+      "stalling",
+      "needless sacrifice",
+      "martyrdom",
+      "resistance",
+      "indecision"
+    ],
+    "shortMeaning": "Willingly pausing and surrendering control reveals the profound wisdom that comes from new angles.",
+    "reversedMeaning": "Unnecessary delays or martyrdom trap you in suspension without the enlightenment it was meant to bring.",
+    "nameZh": "吊人",
+    "goldenDawn": {
+      "hebrewLetter": "Mem (מ)",
+      "treePath": "23rd Path",
+      "pathConnects": "Geburah–Hod",
+      "astrological": "Water (element)",
+      "gdTitle": "The Spirit of the Mighty Waters"
+    },
+    "rws": {
+      "scene": "A man hangs upside down by one ankle from a living T-shaped tree, his free leg crossed behind, hands behind his back, a halo of light around his calm face.",
+      "symbols": [
+        "hanging by choice — the rope is not a trap, he arranged it",
+        "the halo — the reward of the reversed view is insight",
+        "the crossed leg — stillness held deliberately, not collapse"
+      ]
+    }
+  },
+  {
+    "id": "major-13",
+    "name": "Death",
+    "arcanaType": "major",
+    "suit": null,
+    "number": 13,
+    "image": "tarot-cards/13_Death.jpg",
+    "uprightKeywords": [
+      "endings",
+      "transformation",
+      "transition",
+      "letting go",
+      "rebirth"
+    ],
+    "reversedKeywords": [
+      "fear of change",
+      "stagnation",
+      "resistance",
+      "clinging",
+      "inability to move on"
+    ],
+    "shortMeaning": "What must end will end — release the old with grace so the new can be magnificently born.",
+    "reversedMeaning": "Clinging to what is already dead prevents the beautiful transformation waiting on the other side.",
+    "nameZh": "死神",
+    "goldenDawn": {
+      "hebrewLetter": "Nun (נ)",
+      "treePath": "24th Path",
+      "pathConnects": "Tiphareth–Netzach",
+      "astrological": "Scorpio",
+      "gdTitle": "The Child of the Great Transformers, Lord of the Gates of Death"
+    },
+    "rws": {
+      "scene": "A skeleton in black armour rides a white horse carrying a black banner with a white rose; a king lies dead, a bishop pleads, a maiden turns away, a child kneels; a sun rises between two towers in the distance.",
+      "symbols": [
+        "the white rose on a black flag — an ending that is also clean",
+        "the king already fallen — status does not exempt anyone",
+        "the sunrise beyond — this is a passage, not the end of the road"
+      ]
+    }
+  },
+  {
+    "id": "major-14",
+    "name": "Temperance",
+    "arcanaType": "major",
+    "suit": null,
+    "number": 14,
+    "image": "tarot-cards/14_Temperance.jpg",
+    "uprightKeywords": [
+      "balance",
+      "moderation",
+      "patience",
+      "purpose",
+      "integration"
+    ],
+    "reversedKeywords": [
+      "imbalance",
+      "excess",
+      "lack of harmony",
+      "impatience",
+      "misalignment"
+    ],
+    "shortMeaning": "Patient alchemy blends opposites into perfect harmony, revealing your highest integrated purpose.",
+    "reversedMeaning": "Excess and imbalance disrupt the sacred flow that keeps mind, body, and spirit in alignment.",
+    "nameZh": "節制",
+    "goldenDawn": {
+      "hebrewLetter": "Samekh (ס)",
+      "treePath": "25th Path",
+      "pathConnects": "Tiphareth–Yesod",
+      "astrological": "Sagittarius",
+      "gdTitle": "The Daughter of the Reconcilers, Bringer-forth of Life"
+    },
+    "rws": {
+      "scene": "A winged figure stands with one foot on land and one in a stream, pouring liquid between two cups, a path behind leading to mountains and a crown of light.",
+      "symbols": [
+        "one foot in water, one on land — holding two natures at once",
+        "liquid crossing between cups — nothing is lost, only recombined",
+        "the far path — this is a long moderation, not a quick fix"
+      ]
+    }
+  },
+  {
+    "id": "major-15",
+    "name": "The Devil",
+    "arcanaType": "major",
+    "suit": null,
+    "number": 15,
+    "image": "tarot-cards/15_Devil.jpg",
+    "uprightKeywords": [
+      "bondage",
+      "addiction",
+      "materialism",
+      "shadow self",
+      "restriction"
+    ],
+    "reversedKeywords": [
+      "liberation",
+      "releasing limiting beliefs",
+      "detachment",
+      "exploring dark thoughts",
+      "independence"
+    ],
+    "shortMeaning": "The chains that bind you are of your own making — shadow work and honest confrontation bring freedom.",
+    "reversedMeaning": "Liberation from toxic patterns becomes possible when you acknowledge the chains you've forged yourself.",
+    "nameZh": "惡魔",
+    "goldenDawn": {
+      "hebrewLetter": "Ayin (ע)",
+      "treePath": "26th Path",
+      "pathConnects": "Tiphareth–Hod",
+      "astrological": "Capricorn",
+      "gdTitle": "The Lord of the Gates of Matter, Child of the Forces of Time"
+    },
+    "rws": {
+      "scene": "A horned goat-headed figure crouches on a pedestal, one hand raised, an inverted star on its brow; a naked man and woman stand chained at the neck, small horns growing, tails begun.",
+      "symbols": [
+        "the loose chains — they could lift them off and do not",
+        "the growing horns — you begin to resemble what you serve",
+        "the raised hand — a mock blessing, a bargain that looks like permission"
+      ]
+    }
+  },
+  {
+    "id": "major-16",
+    "name": "The Tower",
+    "arcanaType": "major",
+    "suit": null,
+    "number": 16,
+    "image": "tarot-cards/16_Tower.jpg",
+    "uprightKeywords": [
+      "sudden change",
+      "upheaval",
+      "chaos",
+      "revelation",
+      "awakening"
+    ],
+    "reversedKeywords": [
+      "averting disaster",
+      "delayed chaos",
+      "fear of change",
+      "personal transformation",
+      "avoidance"
+    ],
+    "shortMeaning": "Sudden upheaval shatters false foundations — the destruction clears the way for authentic rebuilding.",
+    "reversedMeaning": "Resisting inevitable collapse only prolongs the crisis and delays the freedom waiting beyond it.",
+    "nameZh": "高塔",
+    "goldenDawn": {
+      "hebrewLetter": "Peh (פ)",
+      "treePath": "27th Path",
+      "pathConnects": "Netzach–Hod",
+      "astrological": "Mars",
+      "gdTitle": "The Lord of the Hosts of the Mighty"
+    },
+    "rws": {
+      "scene": "Lightning strikes a tall tower on a crag, blasting the crown off its top; flames burst from the windows and two figures fall headlong through the air.",
+      "symbols": [
+        "the crown blown off — what falls first is the false authority",
+        "falling headfirst — no dignified way down",
+        "the lightning from outside — this came from beyond your control"
+      ]
+    }
+  },
+  {
+    "id": "major-17",
+    "name": "The Star",
+    "arcanaType": "major",
+    "suit": null,
+    "number": 17,
+    "image": "tarot-cards/17_Star.jpg",
+    "uprightKeywords": [
+      "hope",
+      "healing",
+      "renewal",
+      "serenity",
+      "inspiration"
+    ],
+    "reversedKeywords": [
+      "despair",
+      "hopelessness",
+      "disconnection",
+      "lost faith",
+      "insecurity"
+    ],
+    "shortMeaning": "After the storm, the stars emerge to pour healing light and renewed hope upon your path.",
+    "reversedMeaning": "Lost faith and despair dim the starlight — reconnecting with hope requires gentle self-compassion.",
+    "nameZh": "星星",
+    "goldenDawn": {
+      "hebrewLetter": "Tzaddi (צ)",
+      "treePath": "28th Path",
+      "pathConnects": "Netzach–Yesod",
+      "astrological": "Aquarius",
+      "gdTitle": "The Daughter of the Firmament, Dweller between the Waters"
+    },
+    "rws": {
+      "scene": "A naked woman kneels at a pool, one foot on the water and one on land, pouring from two jugs — one into the pool, one onto the earth; one great eight-pointed star and seven smaller ones shine overhead, an ibis in a tree.",
+      "symbols": [
+        "completely unclothed — nothing left to defend after the Tower",
+        "water returned to both pool and land — giving back without calculating",
+        "the great star — quiet guidance, visible only once it is dark"
+      ]
+    }
+  },
+  {
+    "id": "major-18",
+    "name": "The Moon",
+    "arcanaType": "major",
+    "suit": null,
+    "number": 18,
+    "image": "tarot-cards/18_Moon.jpg",
+    "uprightKeywords": [
+      "illusion",
+      "fear",
+      "the unconscious",
+      "confusion",
+      "dreams"
+    ],
+    "reversedKeywords": [
+      "releasing fear",
+      "repressed emotions",
+      "unhealthy patterns",
+      "clarity emerging",
+      "confusion lifting"
+    ],
+    "shortMeaning": "The moonlit path through illusion and fear leads to profound truths hidden in the unconscious depths.",
+    "reversedMeaning": "As the fog of confusion lifts, repressed fears and illusions are finally ready to be released.",
+    "nameZh": "月亮",
+    "goldenDawn": {
+      "hebrewLetter": "Qoph (ק)",
+      "treePath": "29th Path",
+      "pathConnects": "Netzach–Malkuth",
+      "astrological": "Pisces",
+      "gdTitle": "The Ruler of Flux and Reflux, Child of the Sons of the Mighty"
+    },
+    "rws": {
+      "scene": "A moon with a downturned face sheds drops of light; a dog and a wolf howl below, a crayfish crawls from a pool, and a path runs between two towers toward far hills.",
+      "symbols": [
+        "dog and wolf — the tame and the wild fear of the same thing",
+        "the crayfish emerging — something old surfacing from the deep",
+        "the path between the towers — you can walk it, but not see the end"
+      ]
+    }
+  },
+  {
+    "id": "major-19",
+    "name": "The Sun",
+    "arcanaType": "major",
+    "suit": null,
+    "number": 19,
+    "image": "tarot-cards/19_Sun.jpg",
+    "uprightKeywords": [
+      "joy",
+      "success",
+      "positivity",
+      "vitality",
+      "clarity"
+    ],
+    "reversedKeywords": [
+      "negativity",
+      "depression",
+      "sadness",
+      "blocked joy",
+      "inner child wounds"
+    ],
+    "shortMeaning": "Radiant success, joy, and clarity illuminate your life as the sun shines its full warmth upon you.",
+    "reversedMeaning": "When inner clouds block the sun's rays, joy becomes elusive and success feels just out of reach.",
+    "nameZh": "太陽",
+    "goldenDawn": {
+      "hebrewLetter": "Resh (ר)",
+      "treePath": "30th Path",
+      "pathConnects": "Hod–Yesod",
+      "astrological": "The Sun",
+      "gdTitle": "The Lord of the Fire of the World"
+    },
+    "rws": {
+      "scene": "A naked child rides a white horse holding a great red banner, beneath a huge radiant sun with a face; four sunflowers lean over a wall behind.",
+      "symbols": [
+        "the child unguarded — nothing hidden, nothing performed",
+        "the banner held loosely — joy that needs no grip",
+        "the wall behind — the garden is left, the open ground taken"
+      ]
+    }
+  },
+  {
+    "id": "major-20",
+    "name": "Judgement",
+    "arcanaType": "major",
+    "suit": null,
+    "number": 20,
+    "image": "tarot-cards/20_Judgement.jpg",
+    "uprightKeywords": [
+      "reflection",
+      "reckoning",
+      "awakening",
+      "absolution",
+      "calling"
+    ],
+    "reversedKeywords": [
+      "self-doubt",
+      "ignoring the call",
+      "harsh self-judgment",
+      "fear of accountability",
+      "stagnation"
+    ],
+    "shortMeaning": "A divine awakening calls you to rise, embrace your highest calling, and leave the past behind.",
+    "reversedMeaning": "Harsh self-judgment or refusing the inner call keeps you buried when it's time to rise and be reborn.",
+    "nameZh": "審判",
+    "goldenDawn": {
+      "hebrewLetter": "Shin (ש)",
+      "treePath": "31st Path",
+      "pathConnects": "Hod–Malkuth",
+      "astrological": "Fire (element) / Spirit",
+      "gdTitle": "The Spirit of the Primal Fire"
+    },
+    "rws": {
+      "scene": "An angel blows a trumpet hung with a cross-marked banner; grey figures — a man, a woman, a child — rise from open coffins on the water, arms lifted, mountains behind.",
+      "symbols": [
+        "rising from the coffins — the past is being answered for, not buried",
+        "arms open, not defensive — the reckoning is welcomed",
+        "the trumpet — the call comes from outside; the timing is not yours"
+      ]
+    }
+  },
+  {
+    "id": "major-21",
+    "name": "The World",
+    "arcanaType": "major",
+    "suit": null,
+    "number": 21,
+    "image": "tarot-cards/21_World.jpg",
+    "uprightKeywords": [
+      "completion",
+      "integration",
+      "accomplishment",
+      "wholeness",
+      "fulfillment"
+    ],
+    "reversedKeywords": [
+      "incompleteness",
+      "shortcuts",
+      "delayed success",
+      "lack of closure",
+      "stagnation"
+    ],
+    "shortMeaning": "A great cycle reaches glorious completion — you stand whole, accomplished, and ready for what's next.",
+    "reversedMeaning": "Unfinished business or shortcuts taken prevent the full experience of hard-won completion and joy.",
+    "nameZh": "世界",
+    "goldenDawn": {
+      "hebrewLetter": "Tav (ת)",
+      "treePath": "32nd Path",
+      "pathConnects": "Yesod–Malkuth",
+      "astrological": "Saturn",
+      "gdTitle": "The Great One of the Night of Time"
+    },
+    "rws": {
+      "scene": "A figure draped in a violet scarf dances inside a laurel wreath holding two wands, with an angel, an eagle, a bull and a lion in the four corners.",
+      "symbols": [
+        "the closed wreath — a full circuit, genuinely completed",
+        "two wands, balanced — the Magician's single wand now doubled and mastered",
+        "the four creatures — every element accounted for"
+      ]
+    }
+  },
+  {
+    "id": "wands-ace",
+    "name": "Ace of Wands",
+    "arcanaType": "minor",
+    "suit": "wands",
+    "number": 1,
+    "image": "tarot-cards/Wands01.jpg",
+    "uprightKeywords": [
+      "inspiration",
+      "new beginnings",
+      "growth",
+      "potential",
+      "spark"
+    ],
+    "reversedKeywords": [
+      "delays",
+      "lack of motivation",
+      "weeds",
+      "creative blocks",
+      "missed opportunity"
+    ],
+    "shortMeaning": "A spark of divine inspiration arrives — seize this creative potential and act with bold passion.",
+    "reversedMeaning": "Creative blocks or squandered inspiration leave potential untapped and momentum lost.",
+    "nameZh": "權杖一",
+    "goldenDawn": {
+      "gdTitle": "Root of the Powers of Fire",
+      "sephirah": "Kether",
+      "astrological": "Pure Fire"
+    },
+    "rws": {
+      "scene": "A hand emerges from a cloud gripping a sprouting wand, loose leaves falling, a castle on a distant hill.",
+      "symbols": [
+        "the sprouting leaves — raw life already breaking out of the wood",
+        "the hand from the cloud — an offer, not yet a decision",
+        "the distant castle — where this could go, still far off"
+      ]
+    }
+  },
+  {
+    "id": "wands-02",
+    "name": "Two of Wands",
+    "arcanaType": "minor",
+    "suit": "wands",
+    "number": 2,
+    "image": "tarot-cards/Wands02.jpg",
+    "uprightKeywords": [
+      "planning",
+      "future vision",
+      "expansion",
+      "discovery",
+      "decisions"
+    ],
+    "reversedKeywords": [
+      "fear of change",
+      "playing it safe",
+      "lack of planning",
+      "restricted vision",
+      "indecision"
+    ],
+    "shortMeaning": "Survey the world before you from your tower of achievement and plan your next bold expansion.",
+    "reversedMeaning": "Fear of venturing beyond the familiar keeps you surveying horizons you never dare to reach.",
+    "nameZh": "權杖二",
+    "goldenDawn": {
+      "gdTitle": "Dominion",
+      "sephirah": "Chokmah",
+      "astrological": "Mars in Aries"
+    },
+    "rws": {
+      "scene": "A man in red stands on a castle battlement holding a small globe, one wand fixed to the wall and one in his hand, looking out over sea and land.",
+      "symbols": [
+        "the globe in his hand — the world considered, not yet travelled",
+        "one wand bolted down, one held — half committed, half free",
+        "standing inside the walls — planning from safety"
+      ]
+    }
+  },
+  {
+    "id": "wands-03",
+    "name": "Three of Wands",
+    "arcanaType": "minor",
+    "suit": "wands",
+    "number": 3,
+    "image": "tarot-cards/Wands03.jpg",
+    "uprightKeywords": [
+      "expansion",
+      "foresight",
+      "overseas ventures",
+      "opportunity",
+      "progress"
+    ],
+    "reversedKeywords": [
+      "obstacles",
+      "delays",
+      "frustration",
+      "lack of foresight",
+      "disappointment"
+    ],
+    "shortMeaning": "Ships return laden with promise — your initial efforts bear fruit as new opportunities approach.",
+    "reversedMeaning": "Frustrating delays and obstacles block the anticipated returns on your earlier investments.",
+    "nameZh": "權杖三",
+    "goldenDawn": {
+      "gdTitle": "Established Strength",
+      "sephirah": "Binah",
+      "astrological": "Sun in Aries"
+    },
+    "rws": {
+      "scene": "A figure stands on a cliff with his back to us, three wands planted around him, watching ships sail out across the water.",
+      "symbols": [
+        "his back turned — the decision is behind him now",
+        "ships already leaving — what was set in motion is under way",
+        "the high vantage — waiting with a wide view, not idly"
+      ]
+    }
+  },
+  {
+    "id": "wands-04",
+    "name": "Four of Wands",
+    "arcanaType": "minor",
+    "suit": "wands",
+    "number": 4,
+    "image": "tarot-cards/Wands04.jpg",
+    "uprightKeywords": [
+      "celebration",
+      "harmony",
+      "homecoming",
+      "community",
+      "milestone"
+    ],
+    "reversedKeywords": [
+      "lack of support",
+      "transient celebration",
+      "discord",
+      "personal milestone",
+      "instability"
+    ],
+    "shortMeaning": "Celebrate this joyful milestone surrounded by those who love you — a moment of pure communal harmony.",
+    "reversedMeaning": "Joy celebrated alone or amid unstable foundations lacks the communal warmth it truly deserves.",
+    "nameZh": "權杖四",
+    "goldenDawn": {
+      "gdTitle": "Completion",
+      "sephirah": "Chesed",
+      "astrological": "Venus in Aries"
+    },
+    "rws": {
+      "scene": "Two figures raise bouquets beneath a flowered garland strung between four upright wands, a castle and a crowd behind.",
+      "symbols": [
+        "the garland between four wands — a threshold you pass through together",
+        "raised bouquets — celebration that is shared, not private",
+        "the castle behind — arrival somewhere stable"
+      ]
+    }
+  },
+  {
+    "id": "wands-05",
+    "name": "Five of Wands",
+    "arcanaType": "minor",
+    "suit": "wands",
+    "number": 5,
+    "image": "tarot-cards/Wands05.jpg",
+    "uprightKeywords": [
+      "conflict",
+      "competition",
+      "disagreement",
+      "chaos",
+      "challenge"
+    ],
+    "reversedKeywords": [
+      "avoiding conflict",
+      "tension release",
+      "compromise",
+      "inner conflict",
+      "resolution"
+    ],
+    "shortMeaning": "Competing energies and differing views create friction — channel this into productive challenge.",
+    "reversedMeaning": "Avoided conflict festers into internal tension, or a long dispute finally finds resolution.",
+    "nameZh": "權杖五",
+    "goldenDawn": {
+      "gdTitle": "Strife",
+      "sephirah": "Geburah",
+      "astrological": "Saturn in Leo"
+    },
+    "rws": {
+      "scene": "Five youths swing wands at each other in a disordered scuffle, none clearly winning, no one hurt.",
+      "symbols": [
+        "no one is bleeding — friction, not real war",
+        "all five wands at different angles — nobody is coordinated",
+        "open ground — this is a scramble for position"
+      ]
+    }
+  },
+  {
+    "id": "wands-06",
+    "name": "Six of Wands",
+    "arcanaType": "minor",
+    "suit": "wands",
+    "number": 6,
+    "image": "tarot-cards/Wands06.jpg",
+    "uprightKeywords": [
+      "victory",
+      "success",
+      "public recognition",
+      "confidence",
+      "triumph"
+    ],
+    "reversedKeywords": [
+      "ego",
+      "arrogance",
+      "delayed success",
+      "fall from grace",
+      "lack of recognition"
+    ],
+    "shortMeaning": "You ride triumphant into a well-earned victory — let the crowd's recognition fuel your confidence.",
+    "reversedMeaning": "Success tainted by ego or a victory met with silence rather than the recognition you deserved.",
+    "nameZh": "權杖六",
+    "goldenDawn": {
+      "gdTitle": "Victory",
+      "sephirah": "Tiphareth",
+      "astrological": "Jupiter in Leo"
+    },
+    "rws": {
+      "scene": "A rider crowned with laurel sits on a white horse, a wreath tied to his wand, a crowd of walkers accompanying him.",
+      "symbols": [
+        "the laurel wreath — public recognition, formally given",
+        "the crowd on foot — his win is witnessed and carried by others",
+        "riding, not fighting — the contest is already over"
+      ]
+    }
+  },
+  {
+    "id": "wands-07",
+    "name": "Seven of Wands",
+    "arcanaType": "minor",
+    "suit": "wands",
+    "number": 7,
+    "image": "tarot-cards/Wands07.jpg",
+    "uprightKeywords": [
+      "challenge",
+      "competition",
+      "perseverance",
+      "defense",
+      "courage"
+    ],
+    "reversedKeywords": [
+      "giving up",
+      "overwhelm",
+      "excessive challenges",
+      "resignation",
+      "self-doubt"
+    ],
+    "shortMeaning": "Hold your ground against all challengers — your position is worth defending with fierce conviction.",
+    "reversedMeaning": "Feeling overwhelmed by opposition makes you consider abandoning the position you've worked hard to hold.",
+    "nameZh": "權杖七",
+    "goldenDawn": {
+      "gdTitle": "Valour",
+      "sephirah": "Netzach",
+      "astrological": "Mars in Leo"
+    },
+    "rws": {
+      "scene": "A man on high ground strikes downward against six wands rising at him from below, wearing mismatched boots.",
+      "symbols": [
+        "the high ground — he has the advantage as long as he holds it",
+        "six against one — the pressure is real and outnumbering",
+        "mismatched boots — he was not fully ready when this began"
+      ]
+    }
+  },
+  {
+    "id": "wands-08",
+    "name": "Eight of Wands",
+    "arcanaType": "minor",
+    "suit": "wands",
+    "number": 8,
+    "image": "tarot-cards/Wands08.jpg",
+    "uprightKeywords": [
+      "speed",
+      "movement",
+      "swift action",
+      "travel",
+      "news"
+    ],
+    "reversedKeywords": [
+      "delays",
+      "frustration",
+      "resisting change",
+      "internal alignment needed",
+      "slow progress"
+    ],
+    "shortMeaning": "Everything accelerates as wands fly in rapid succession — expect swift news, travel, or rapid change.",
+    "reversedMeaning": "What should be swift is frustratingly stalled — internal misalignment slows the needed momentum.",
+    "nameZh": "權杖八",
+    "goldenDawn": {
+      "gdTitle": "Swiftness",
+      "sephirah": "Hod",
+      "astrological": "Mercury in Sagittarius"
+    },
+    "rws": {
+      "scene": "Eight wands fly in parallel through clear sky above a river and green hills, with no figure anywhere.",
+      "symbols": [
+        "no people at all — this is momentum, not somebody's effort",
+        "all eight parallel — everything moving one way at last",
+        "descending toward land — arrival is near"
+      ]
+    }
+  },
+  {
+    "id": "wands-09",
+    "name": "Nine of Wands",
+    "arcanaType": "minor",
+    "suit": "wands",
+    "number": 9,
+    "image": "tarot-cards/Wands09.jpg",
+    "uprightKeywords": [
+      "resilience",
+      "courage",
+      "persistence",
+      "test of faith",
+      "boundaries"
+    ],
+    "reversedKeywords": [
+      "exhaustion",
+      "giving up",
+      "paranoia",
+      "lack of resilience",
+      "inflexibility"
+    ],
+    "shortMeaning": "Battered but standing, you guard what you have built — one more effort will see you through.",
+    "reversedMeaning": "Battle-weary and borderline paranoid, the last reserves of resilience threaten to give way.",
+    "nameZh": "權杖九",
+    "goldenDawn": {
+      "gdTitle": "Strength",
+      "sephirah": "Yesod",
+      "astrological": "Moon in Sagittarius"
+    },
+    "rws": {
+      "scene": "A bandaged man leans on one wand, eight more standing behind him like a fence, watching warily off-frame.",
+      "symbols": [
+        "the head bandage — he has already been hurt once",
+        "eight wands as a fence — what he has defended so far",
+        "still standing — worn down but not beaten"
+      ]
+    }
+  },
+  {
+    "id": "wands-10",
+    "name": "Ten of Wands",
+    "arcanaType": "minor",
+    "suit": "wands",
+    "number": 10,
+    "image": "tarot-cards/Wands10.jpg",
+    "uprightKeywords": [
+      "burden",
+      "responsibility",
+      "hard work",
+      "completion",
+      "overwhelm"
+    ],
+    "reversedKeywords": [
+      "releasing burden",
+      "delegation",
+      "dropping the load",
+      "burned out",
+      "unable to let go"
+    ],
+    "shortMeaning": "You carry a heavy load toward the finish line — the burden is real, but the destination is close.",
+    "reversedMeaning": "Burned out under an unbearable burden, you must learn to delegate and put down what isn't yours to carry.",
+    "nameZh": "權杖十",
+    "goldenDawn": {
+      "gdTitle": "Oppression",
+      "sephirah": "Malkuth",
+      "astrological": "Saturn in Sagittarius"
+    },
+    "rws": {
+      "scene": "A man bends under an armful of ten wands, face hidden by the load, carrying them toward a house in the distance.",
+      "symbols": [
+        "the bundle blocking his view — the load has replaced the goal",
+        "the house ahead — the end is close, which is why he will not put it down",
+        "carrying all ten alone — none of it delegated"
+      ]
+    }
+  },
+  {
+    "id": "wands-page",
+    "name": "Page of Wands",
+    "arcanaType": "minor",
+    "suit": "wands",
+    "number": "Page",
+    "image": "tarot-cards/Wands11.jpg",
+    "uprightKeywords": [
+      "exploration",
+      "enthusiasm",
+      "discovery",
+      "free spirit",
+      "potential"
+    ],
+    "reversedKeywords": [
+      "lack of direction",
+      "procrastination",
+      "distraction",
+      "immaturity",
+      "unfinished projects"
+    ],
+    "shortMeaning": "The world ignites with possibility — pursue every spark of curiosity with fearless youthful energy.",
+    "reversedMeaning": "Bright enthusiasm without direction scatters into a trail of unfinished projects and distractions.",
+    "nameZh": "權杖侍者",
+    "goldenDawn": {
+      "gdTitle": "Princess of Wands",
+      "elementalFormula": "Earth of Fire",
+      "astrological": null
+    },
+    "rws": {
+      "scene": "A youth in a patterned tunic stands holding a tall wand, looking up at its tip, pyramids and desert behind.",
+      "symbols": [
+        "looking up at the wand — curiosity before capability",
+        "the desert — nothing built here yet",
+        "feet planted, wand still — a message received, not yet acted on"
+      ]
+    }
+  },
+  {
+    "id": "wands-knight",
+    "name": "Knight of Wands",
+    "arcanaType": "minor",
+    "suit": "wands",
+    "number": "Knight",
+    "image": "tarot-cards/Wands12.jpg",
+    "uprightKeywords": [
+      "adventure",
+      "passion",
+      "fearlessness",
+      "energy",
+      "impulsiveness"
+    ],
+    "reversedKeywords": [
+      "haste",
+      "recklessness",
+      "scattered energy",
+      "delays",
+      "frustration"
+    ],
+    "shortMeaning": "Charge into your passion with the fearless speed of a knight who has never met an obstacle worth fearing.",
+    "reversedMeaning": "Reckless haste and scattered fire burn bright but short, leaving a trail of incomplete ambitions.",
+    "nameZh": "權杖騎士",
+    "goldenDawn": {
+      "gdTitle": "King of Wands",
+      "elementalFormula": "Fire of Fire",
+      "astrological": null
+    },
+    "rws": {
+      "scene": "An armoured knight on a rearing horse charges forward, plumed helmet, salamanders on his tunic, pyramids behind.",
+      "symbols": [
+        "the rearing horse — more force than direction",
+        "salamanders — fire that survives its own burning",
+        "armour and haste together — bold, and not looking far ahead"
+      ]
+    }
+  },
+  {
+    "id": "wands-queen",
+    "name": "Queen of Wands",
+    "arcanaType": "minor",
+    "suit": "wands",
+    "number": "Queen",
+    "image": "tarot-cards/Wands13.jpg",
+    "uprightKeywords": [
+      "confidence",
+      "independence",
+      "social butterfly",
+      "determination",
+      "vivacity"
+    ],
+    "reversedKeywords": [
+      "selfishness",
+      "jealousy",
+      "insecurity",
+      "demanding",
+      "temperamental"
+    ],
+    "shortMeaning": "Radiant and self-assured, you draw others into your magnetic orbit with warmth and bold creative fire.",
+    "reversedMeaning": "Insecurity masquerading as confidence becomes demanding and jealous, alienating those you need.",
+    "nameZh": "權杖皇后",
+    "goldenDawn": {
+      "gdTitle": "Queen of Wands",
+      "elementalFormula": "Water of Fire",
+      "astrological": null
+    },
+    "rws": {
+      "scene": "A crowned queen sits facing outward on a throne carved with lions, a wand in one hand and a sunflower in the other, a black cat at her feet.",
+      "symbols": [
+        "the sunflower — warmth that turns toward what it wants",
+        "the black cat — instinct and shadow kept close, not denied",
+        "facing straight out — nothing hidden about her"
+      ]
+    }
+  },
+  {
+    "id": "wands-king",
+    "name": "King of Wands",
+    "arcanaType": "minor",
+    "suit": "wands",
+    "number": "King",
+    "image": "tarot-cards/Wands14.jpg",
+    "uprightKeywords": [
+      "vision",
+      "leadership",
+      "entrepreneur",
+      "bold",
+      "charismatic"
+    ],
+    "reversedKeywords": [
+      "arrogance",
+      "impulsiveness",
+      "tyranny",
+      "ruthlessness",
+      "ineffective leadership"
+    ],
+    "shortMeaning": "Visionary leadership and entrepreneurial fire inspire others to follow your bold, courageous example.",
+    "reversedMeaning": "Unchecked fire becomes domineering and reckless, burning allies with impulsive, authoritarian decisions.",
+    "nameZh": "權杖國王",
+    "goldenDawn": {
+      "gdTitle": "Prince of Wands",
+      "elementalFormula": "Air of Fire",
+      "astrological": null
+    },
+    "rws": {
+      "scene": "A crowned king sits at an angle on a throne of lions and salamanders, wand in hand, a live salamander at his feet.",
+      "symbols": [
+        "seated at an angle — already half turned toward action",
+        "the living salamander — vision that has become real",
+        "the wand held upright — authority in what he creates"
+      ]
+    }
+  },
+  {
+    "id": "cups-ace",
+    "name": "Ace of Cups",
+    "arcanaType": "minor",
+    "suit": "cups",
+    "number": 1,
+    "image": "tarot-cards/Cups01.jpg",
+    "uprightKeywords": [
+      "new love",
+      "emotional beginnings",
+      "intuition",
+      "creativity",
+      "compassion"
+    ],
+    "reversedKeywords": [
+      "blocked emotions",
+      "emptiness",
+      "repressed feelings",
+      "emotional loss",
+      "unrequited love"
+    ],
+    "shortMeaning": "A cup overflows with divine love and emotional possibility — open your heart to receive this gift.",
+    "reversedMeaning": "An overflowing cup turned upside down spills the gift of love before it can be received.",
+    "nameZh": "聖杯一",
+    "goldenDawn": {
+      "gdTitle": "Root of the Powers of Water",
+      "sephirah": "Kether",
+      "astrological": "Pure Water"
+    },
+    "rws": {
+      "scene": "A hand from a cloud offers a cup overflowing in five streams, a dove descending with a wafer, lotuses on the water below.",
+      "symbols": [
+        "five overflowing streams — more feeling than the vessel can hold",
+        "the descending dove — the offer comes from above, unearned",
+        "open water beneath — where it will all end up"
+      ]
+    }
+  },
+  {
+    "id": "cups-02",
+    "name": "Two of Cups",
+    "arcanaType": "minor",
+    "suit": "cups",
+    "number": 2,
+    "image": "tarot-cards/Cups02.jpg",
+    "uprightKeywords": [
+      "unity",
+      "partnership",
+      "mutual attraction",
+      "connection",
+      "harmony"
+    ],
+    "reversedKeywords": [
+      "disharmony",
+      "broken partnership",
+      "disconnection",
+      "imbalance",
+      "separation"
+    ],
+    "shortMeaning": "Two souls meet in perfect mutual recognition — a partnership built on genuine connection and love.",
+    "reversedMeaning": "What was once harmonious union shows cracks of disconnection and growing imbalance.",
+    "nameZh": "聖杯二",
+    "goldenDawn": {
+      "gdTitle": "Love",
+      "sephirah": "Chokmah",
+      "astrological": "Venus in Cancer"
+    },
+    "rws": {
+      "scene": "A man and a woman face each other exchanging cups, a winged lion's head above a staff of entwined serpents rising between them.",
+      "symbols": [
+        "cups exchanged, not taken — an equal trade",
+        "the caduceus between them — healing through the meeting itself",
+        "standing on level ground — neither one above"
+      ]
+    }
+  },
+  {
+    "id": "cups-03",
+    "name": "Three of Cups",
+    "arcanaType": "minor",
+    "suit": "cups",
+    "number": 3,
+    "image": "tarot-cards/Cups03.jpg",
+    "uprightKeywords": [
+      "celebration",
+      "friendship",
+      "creativity",
+      "community",
+      "joy"
+    ],
+    "reversedKeywords": [
+      "gossip",
+      "overindulgence",
+      "cliques",
+      "isolation",
+      "cancelled celebration"
+    ],
+    "shortMeaning": "Raise a cup with cherished friends — joy multiplies when shared in beloved community.",
+    "reversedMeaning": "Celebration turns sour through overindulgence, gossip, or exclusionary cliques and shallow friendships.",
+    "nameZh": "聖杯三",
+    "goldenDawn": {
+      "gdTitle": "Abundance",
+      "sephirah": "Binah",
+      "astrological": "Mercury in Cancer"
+    },
+    "rws": {
+      "scene": "Three women raise their cups together in a circle, dancing among fruit and vines.",
+      "symbols": [
+        "cups raised to touch — joy that requires other people",
+        "the harvest underfoot — celebrating something actually gathered",
+        "a closed circle — belonging, with an inside and an outside"
+      ]
+    }
+  },
+  {
+    "id": "cups-04",
+    "name": "Four of Cups",
+    "arcanaType": "minor",
+    "suit": "cups",
+    "number": 4,
+    "image": "tarot-cards/Cups04.jpg",
+    "uprightKeywords": [
+      "contemplation",
+      "apathy",
+      "reevaluation",
+      "disconnection",
+      "boredom"
+    ],
+    "reversedKeywords": [
+      "sudden awareness",
+      "choosing happiness",
+      "acceptance",
+      "motivation returned",
+      "renewed interest"
+    ],
+    "shortMeaning": "In meditative discontent, you fail to notice the new cup the universe quietly extends toward you.",
+    "reversedMeaning": "Eyes finally open, you notice the gift being offered and choose renewed engagement over apathy.",
+    "nameZh": "聖杯四",
+    "goldenDawn": {
+      "gdTitle": "Luxury",
+      "sephirah": "Chesed",
+      "astrological": "Moon in Cancer"
+    },
+    "rws": {
+      "scene": "A young man sits under a tree with folded arms, three cups on the grass before him, a fourth offered from a cloud that he does not look at.",
+      "symbols": [
+        "folded arms — refusal before consideration",
+        "the unnoticed fourth cup — a real offer, missed by inattention",
+        "seated under the tree — withdrawn into himself"
+      ]
+    }
+  },
+  {
+    "id": "cups-05",
+    "name": "Five of Cups",
+    "arcanaType": "minor",
+    "suit": "cups",
+    "number": 5,
+    "image": "tarot-cards/Cups05.jpg",
+    "uprightKeywords": [
+      "loss",
+      "grief",
+      "regret",
+      "disappointment",
+      "mourning"
+    ],
+    "reversedKeywords": [
+      "acceptance",
+      "moving on",
+      "finding peace",
+      "forgiveness",
+      "lessons learned"
+    ],
+    "shortMeaning": "Grief over what was spilled may prevent you from seeing the two cups still standing behind you.",
+    "reversedMeaning": "After sitting with loss, you find the courage to turn around and embrace what still remains.",
+    "nameZh": "聖杯五",
+    "goldenDawn": {
+      "gdTitle": "Loss, Disappointment",
+      "sephirah": "Geburah",
+      "astrological": "Mars in Scorpio"
+    },
+    "rws": {
+      "scene": "A figure in a black cloak looks down at three spilled cups, two still standing behind, a bridge leading to a castle across the river.",
+      "symbols": [
+        "three spilled, two upright — the loss is real but not total",
+        "the cloak turned inward — grief that has not looked up",
+        "the bridge already there — the way back exists whenever he turns"
+      ]
+    }
+  },
+  {
+    "id": "cups-06",
+    "name": "Six of Cups",
+    "arcanaType": "minor",
+    "suit": "cups",
+    "number": 6,
+    "image": "tarot-cards/Cups06.jpg",
+    "uprightKeywords": [
+      "nostalgia",
+      "childhood",
+      "innocence",
+      "reunion",
+      "happy memories"
+    ],
+    "reversedKeywords": [
+      "living in the past",
+      "naivety",
+      "stagnation",
+      "unrealistic idealism",
+      "lost childhood"
+    ],
+    "shortMeaning": "Sweet nostalgia and innocent joy return as a gift from the past that nourishes the present.",
+    "reversedMeaning": "Rose-tinted memories keep you anchored in the past, unable to fully inhabit your present life.",
+    "nameZh": "聖杯六",
+    "goldenDawn": {
+      "gdTitle": "Pleasure",
+      "sephirah": "Tiphareth",
+      "astrological": "Sun in Scorpio"
+    },
+    "rws": {
+      "scene": "A child hands another child a cup filled with white flowers in a village courtyard, five more flowered cups around them.",
+      "symbols": [
+        "flowers growing in the cups — the past kept alive and tended",
+        "two children — innocence, or the memory of it",
+        "the courtyard walls — a safe enclosure, and a small one"
+      ]
+    }
+  },
+  {
+    "id": "cups-07",
+    "name": "Seven of Cups",
+    "arcanaType": "minor",
+    "suit": "cups",
+    "number": 7,
+    "image": "tarot-cards/Cups07.jpg",
+    "uprightKeywords": [
+      "illusion",
+      "fantasy",
+      "wishful thinking",
+      "choices",
+      "daydreaming"
+    ],
+    "reversedKeywords": [
+      "clarity",
+      "sobriety",
+      "aligned choices",
+      "reality check",
+      "cutting through illusion"
+    ],
+    "shortMeaning": "Amid the fog of fantasy and endless possibility, one cup holds real treasure — discern wisely.",
+    "reversedMeaning": "The dreamy fog lifts, bringing clarity that cuts through illusion to reveal which choice is truly real.",
+    "nameZh": "聖杯七",
+    "goldenDawn": {
+      "gdTitle": "Illusory Success, Debauch",
+      "sephirah": "Netzach",
+      "astrological": "Venus in Scorpio"
+    },
+    "rws": {
+      "scene": "A dark silhouette faces seven cups floating in cloud, each holding something different: a face, a veiled figure, a snake, a castle, jewels, a wreath, a dragon.",
+      "symbols": [
+        "all seven in cloud — none of it is solid yet",
+        "the veiled figure — the most attractive option is the least examined",
+        "the figure only a silhouette — he has not committed enough to be real"
+      ]
+    }
+  },
+  {
+    "id": "cups-08",
+    "name": "Eight of Cups",
+    "arcanaType": "minor",
+    "suit": "cups",
+    "number": 8,
+    "image": "tarot-cards/Cups08.jpg",
+    "uprightKeywords": [
+      "withdrawal",
+      "walking away",
+      "disillusionment",
+      "seeking truth",
+      "abandonment"
+    ],
+    "reversedKeywords": [
+      "avoidance",
+      "fear of moving on",
+      "drifting",
+      "staying too long",
+      "aimlessness"
+    ],
+    "shortMeaning": "You turn your back on what once satisfied you, following the moon's pull toward deeper meaning.",
+    "reversedMeaning": "Fear of leaving what no longer serves you keeps you wandering without the courage to truly depart.",
+    "nameZh": "聖杯八",
+    "goldenDawn": {
+      "gdTitle": "Abandoned Success, Indolence",
+      "sephirah": "Hod",
+      "astrological": "Saturn in Pisces"
+    },
+    "rws": {
+      "scene": "A cloaked man walks away over rough ground toward mountains, eight cups stacked neatly behind him, the moon in eclipse above.",
+      "symbols": [
+        "the cups left standing and undamaged — he leaves something that still works",
+        "his back to us — the choice is not up for discussion",
+        "the eclipsed moon — leaving at a time that feels unfinished"
+      ]
+    }
+  },
+  {
+    "id": "cups-09",
+    "name": "Nine of Cups",
+    "arcanaType": "minor",
+    "suit": "cups",
+    "number": 9,
+    "image": "tarot-cards/Cups09.jpg",
+    "uprightKeywords": [
+      "contentment",
+      "satisfaction",
+      "gratitude",
+      "emotional fulfillment",
+      "wish granted"
+    ],
+    "reversedKeywords": [
+      "greed",
+      "dissatisfaction",
+      "materialism",
+      "overindulgence",
+      "shallow satisfaction"
+    ],
+    "shortMeaning": "The wish card grants your heart's desire — sit in the contentment of emotional abundance fulfilled.",
+    "reversedMeaning": "Material satisfaction without inner fulfillment proves hollow, and greed for more replaces gratitude.",
+    "nameZh": "聖杯九",
+    "goldenDawn": {
+      "gdTitle": "Material Happiness",
+      "sephirah": "Yesod",
+      "astrological": "Jupiter in Pisces"
+    },
+    "rws": {
+      "scene": "A well-fed man in a red cap sits with folded arms before a curved counter draped in blue, nine cups arranged in a row behind him.",
+      "symbols": [
+        "the cups behind, not shared — satisfaction kept for himself",
+        "folded arms — content, and a little closed",
+        "one row, evenly spaced — the wish granted, tidily"
+      ]
+    }
+  },
+  {
+    "id": "cups-10",
+    "name": "Ten of Cups",
+    "arcanaType": "minor",
+    "suit": "cups",
+    "number": 10,
+    "image": "tarot-cards/Cups10.jpg",
+    "uprightKeywords": [
+      "harmony",
+      "divine love",
+      "family bliss",
+      "alignment",
+      "lasting happiness"
+    ],
+    "reversedKeywords": [
+      "broken family",
+      "disrupted values",
+      "dysfunctional home",
+      "misalignment",
+      "disconnection"
+    ],
+    "shortMeaning": "A rainbow of divine love crowns the scene of lasting family harmony and shared emotional fulfillment.",
+    "reversedMeaning": "The picture-perfect family vision hides cracks of dysfunction and values that have drifted apart.",
+    "nameZh": "聖杯十",
+    "goldenDawn": {
+      "gdTitle": "Satiety",
+      "sephirah": "Malkuth",
+      "astrological": "Mars in Pisces"
+    },
+    "rws": {
+      "scene": "A couple stand with arms raised beneath a rainbow of ten cups, two children dancing beside them, a house and river behind.",
+      "symbols": [
+        "the rainbow — a promise after weather, not instead of it",
+        "arms open, not holding the cups — the joy is not gripped",
+        "children dancing apart — happiness that does not need supervising"
+      ]
+    }
+  },
+  {
+    "id": "cups-page",
+    "name": "Page of Cups",
+    "arcanaType": "minor",
+    "suit": "cups",
+    "number": "Page",
+    "image": "tarot-cards/Cups11.jpg",
+    "uprightKeywords": [
+      "creative opportunity",
+      "intuitive messages",
+      "curiosity",
+      "emotional openness",
+      "wonder"
+    ],
+    "reversedKeywords": [
+      "emotional immaturity",
+      "creative blocks",
+      "escapism",
+      "moodiness",
+      "bad news"
+    ],
+    "shortMeaning": "A fish leaps from a cup with a message — approach life with childlike wonder and open-hearted intuition.",
+    "reversedMeaning": "Emotional immaturity or escapist fantasies block the creative and intuitive gifts waiting to emerge.",
+    "nameZh": "聖杯侍者",
+    "goldenDawn": {
+      "gdTitle": "Princess of Cups",
+      "elementalFormula": "Earth of Water",
+      "astrological": null
+    },
+    "rws": {
+      "scene": "A youth in a flowered tunic holds up a cup from which a fish is rising to look at him, a wavy sea behind.",
+      "symbols": [
+        "the fish in the cup — the unconscious speaking up unexpectedly",
+        "the absurd made welcome — he is amused, not alarmed",
+        "flowered clothes against a rough sea — softness in a moving element"
+      ]
+    }
+  },
+  {
+    "id": "cups-knight",
+    "name": "Knight of Cups",
+    "arcanaType": "minor",
+    "suit": "cups",
+    "number": "Knight",
+    "image": "tarot-cards/Cups12.jpg",
+    "uprightKeywords": [
+      "romance",
+      "charm",
+      "imagination",
+      "idealism",
+      "following the heart"
+    ],
+    "reversedKeywords": [
+      "moodiness",
+      "disappointment",
+      "unrealistic",
+      "jealousy",
+      "escapism"
+    ],
+    "shortMeaning": "The romantic knight arrives bearing a cup of dreams — follow your heart's most idealistic vision.",
+    "reversedMeaning": "Dreamy idealism ungrounded in reality leads to moody disappointment when fantasy meets truth.",
+    "nameZh": "聖杯騎士",
+    "goldenDawn": {
+      "gdTitle": "King of Cups",
+      "elementalFormula": "Fire of Water",
+      "astrological": null
+    },
+    "rws": {
+      "scene": "A knight in winged helmet rides a white horse at a walk, holding a cup out steadily before him, a stream ahead.",
+      "symbols": [
+        "riding at a walk — the only knight who does not rush",
+        "winged helmet and heels — imagination, moving deliberately",
+        "the cup held level — an offer carried without spilling"
+      ]
+    }
+  },
+  {
+    "id": "cups-queen",
+    "name": "Queen of Cups",
+    "arcanaType": "minor",
+    "suit": "cups",
+    "number": "Queen",
+    "image": "tarot-cards/Cups13.jpg",
+    "uprightKeywords": [
+      "compassion",
+      "intuition",
+      "emotional security",
+      "empathy",
+      "nurturing"
+    ],
+    "reversedKeywords": [
+      "emotional insecurity",
+      "co-dependency",
+      "martyrdom",
+      "manipulation",
+      "moodiness"
+    ],
+    "shortMeaning": "Deeply empathic and intuitively wise, you hold space for others while maintaining your own emotional depth.",
+    "reversedMeaning": "Emotional boundaries dissolve into co-dependency or emotional manipulation disguised as care.",
+    "nameZh": "聖杯皇后",
+    "goldenDawn": {
+      "gdTitle": "Queen of Cups",
+      "elementalFormula": "Water of Water",
+      "astrological": null
+    },
+    "rws": {
+      "scene": "A queen sits on a throne at the water's edge, absorbed in an ornate closed cup shaped like a shrine.",
+      "symbols": [
+        "the lidded cup — the only cup in the deck that is closed",
+        "her throne on the shoreline — between feeling and solid ground",
+        "her whole attention inward — she reads by feeling first"
+      ]
+    }
+  },
+  {
+    "id": "cups-king",
+    "name": "King of Cups",
+    "arcanaType": "minor",
+    "suit": "cups",
+    "number": "King",
+    "image": "tarot-cards/Cups14.jpg",
+    "uprightKeywords": [
+      "emotional balance",
+      "compassion",
+      "diplomacy",
+      "wisdom",
+      "calmness"
+    ],
+    "reversedKeywords": [
+      "emotional manipulation",
+      "moodiness",
+      "volatility",
+      "cold",
+      "dishonesty"
+    ],
+    "shortMeaning": "Mastery of emotion allows compassionate wisdom to flow — lead from the heart with serene authority.",
+    "reversedMeaning": "Emotional repression bubbles into manipulation or volatile outbursts that undermine trust and wisdom.",
+    "nameZh": "聖杯國王",
+    "goldenDawn": {
+      "gdTitle": "Prince of Cups",
+      "elementalFormula": "Air of Water",
+      "astrological": null
+    },
+    "rws": {
+      "scene": "A king sits on a throne floating on choppy sea, a cup in one hand and a sceptre in the other, a fish leaping and a ship riding the swell behind.",
+      "symbols": [
+        "a throne on open water — steadiness held over unsteady depths",
+        "the fish and the ship — emotion and enterprise both in motion",
+        "dry robes on a rough sea — feeling deeply without being swamped"
+      ]
+    }
+  },
+  {
+    "id": "swords-ace",
+    "name": "Ace of Swords",
+    "arcanaType": "minor",
+    "suit": "swords",
+    "number": 1,
+    "image": "tarot-cards/Swords01.jpg",
+    "uprightKeywords": [
+      "clarity",
+      "breakthrough",
+      "truth",
+      "mental force",
+      "new idea"
+    ],
+    "reversedKeywords": [
+      "confusion",
+      "chaos",
+      "lack of clarity",
+      "misinformation",
+      "blocked communication"
+    ],
+    "shortMeaning": "A sword of truth cuts through confusion — mental clarity arrives with stunning, liberating precision.",
+    "reversedMeaning": "The sword of clarity is blunted by confusion, leaving you mired in misinformation and mental fog.",
+    "nameZh": "寶劍一",
+    "goldenDawn": {
+      "gdTitle": "Root of the Powers of Air",
+      "sephirah": "Kether",
+      "astrological": "Pure Air"
+    },
+    "rws": {
+      "scene": "A hand from a cloud grips an upright sword crowned with a laurel wreath and a palm, six drops of light falling, barren peaks below.",
+      "symbols": [
+        "the crowned sword — clarity that arrives like a verdict",
+        "the barren mountains — truth does not care whether it is comfortable",
+        "held point-up — a decision waiting to be brought down"
+      ]
+    }
+  },
+  {
+    "id": "swords-02",
+    "name": "Two of Swords",
+    "arcanaType": "minor",
+    "suit": "swords",
+    "number": 2,
+    "image": "tarot-cards/Swords02.jpg",
+    "uprightKeywords": [
+      "difficult decisions",
+      "stalemate",
+      "blocked emotions",
+      "indecision",
+      "denial"
+    ],
+    "reversedKeywords": [
+      "confusion",
+      "lesser of two evils",
+      "indecision",
+      "avoiding truth",
+      "overwhelmed"
+    ],
+    "shortMeaning": "Blindfolded at the crossroads, you must make a decision without perfect information — trust your gut.",
+    "reversedMeaning": "Paralyzed between impossible options, avoidance of the truth only prolongs the painful stalemate.",
+    "nameZh": "寶劍二",
+    "goldenDawn": {
+      "gdTitle": "Peace Restored",
+      "sephirah": "Chokmah",
+      "astrological": "Moon in Libra"
+    },
+    "rws": {
+      "scene": "A blindfolded woman sits on a stone bench before a moonlit sea, two swords crossed over her chest in perfect balance.",
+      "symbols": [
+        "the blindfold — she has chosen not to look at the choice",
+        "the two swords crossed over the heart — the stalemate is held by effort",
+        "the sea at her back — the feelings she has turned away from"
+      ]
+    }
+  },
+  {
+    "id": "swords-03",
+    "name": "Three of Swords",
+    "arcanaType": "minor",
+    "suit": "swords",
+    "number": 3,
+    "image": "tarot-cards/Swords03.jpg",
+    "uprightKeywords": [
+      "heartbreak",
+      "grief",
+      "painful truth",
+      "separation",
+      "loss"
+    ],
+    "reversedKeywords": [
+      "healing",
+      "recovery",
+      "forgiveness",
+      "moving forward",
+      "release"
+    ],
+    "shortMeaning": "Three swords pierce the heart — pain, grief, and truth arrive together in a storm of necessary clarity.",
+    "reversedMeaning": "After the storm of heartbreak, healing gently begins as you remove the swords one painful step at a time.",
+    "nameZh": "寶劍三",
+    "goldenDawn": {
+      "gdTitle": "Sorrow",
+      "sephirah": "Binah",
+      "astrological": "Saturn in Libra"
+    },
+    "rws": {
+      "scene": "Three swords pierce a red heart suspended in grey rain and cloud, with no figure present.",
+      "symbols": [
+        "no person in the image — the pain is the whole picture",
+        "rain behind — grief that is weather, not permanent climate",
+        "the heart still whole around the blades — pierced, not destroyed"
+      ]
+    }
+  },
+  {
+    "id": "swords-04",
+    "name": "Four of Swords",
+    "arcanaType": "minor",
+    "suit": "swords",
+    "number": 4,
+    "image": "tarot-cards/Swords04.jpg",
+    "uprightKeywords": [
+      "rest",
+      "contemplation",
+      "recovery",
+      "passive meditation",
+      "truce"
+    ],
+    "reversedKeywords": [
+      "restlessness",
+      "burnout",
+      "stress",
+      "inability to rest",
+      "recovery"
+    ],
+    "shortMeaning": "Step away from the battlefield — this sacred pause of rest and reflection will restore your strength.",
+    "reversedMeaning": "Restlessness prevents the rest that is desperately needed, driving you toward the edge of burnout.",
+    "nameZh": "寶劍四",
+    "goldenDawn": {
+      "gdTitle": "Rest from Strife",
+      "sephirah": "Chesed",
+      "astrological": "Jupiter in Libra"
+    },
+    "rws": {
+      "scene": "A knight lies in stone effigy on a tomb inside a church, hands pressed in prayer, three swords hanging on the wall and one lying beneath him, a stained-glass window above.",
+      "symbols": [
+        "lying down, not dead — retreat chosen on purpose",
+        "three swords stowed on the wall — the fight put away, not lost",
+        "the window's light — recovery in a protected place"
+      ]
+    }
+  },
+  {
+    "id": "swords-05",
+    "name": "Five of Swords",
+    "arcanaType": "minor",
+    "suit": "swords",
+    "number": 5,
+    "image": "tarot-cards/Swords05.jpg",
+    "uprightKeywords": [
+      "conflict",
+      "defeat",
+      "betrayal",
+      "hollow victory",
+      "tension"
+    ],
+    "reversedKeywords": [
+      "reconciliation",
+      "making amends",
+      "past resentment",
+      "moving on",
+      "forgiveness"
+    ],
+    "shortMeaning": "A hollow victory gathered at great cost — not every battle won is worth the allies lost in the fight.",
+    "reversedMeaning": "Old wounds and conflicts finally open to the possibility of reconciliation and genuine forgiveness.",
+    "nameZh": "寶劍五",
+    "goldenDawn": {
+      "gdTitle": "Defeat",
+      "sephirah": "Geburah",
+      "astrological": "Venus in Aquarius"
+    },
+    "rws": {
+      "scene": "A smirking man gathers up swords while two defeated figures walk away with their backs turned, under a ragged sky.",
+      "symbols": [
+        "he collects the swords — a win that leaves him holding everything",
+        "the two walking away — what the victory cost in company",
+        "the torn clouds — the air has not cleared"
+      ]
+    }
+  },
+  {
+    "id": "swords-06",
+    "name": "Six of Swords",
+    "arcanaType": "minor",
+    "suit": "swords",
+    "number": 6,
+    "image": "tarot-cards/Swords06.jpg",
+    "uprightKeywords": [
+      "transition",
+      "moving on",
+      "leaving behind",
+      "rite of passage",
+      "mental journey"
+    ],
+    "reversedKeywords": [
+      "stuck in the past",
+      "unresolved issues",
+      "turbulence",
+      "inability to move on",
+      "baggage"
+    ],
+    "shortMeaning": "Cross through the turbulent waters toward calmer shores — this journey is necessary and you will arrive.",
+    "reversedMeaning": "Carrying unresolved baggage makes the passage rougher — old wounds reopen before they can heal.",
+    "nameZh": "寶劍六",
+    "goldenDawn": {
+      "gdTitle": "Earned Success, Science",
+      "sephirah": "Tiphareth",
+      "astrological": "Mercury in Aquarius"
+    },
+    "rws": {
+      "scene": "A ferryman poles a boat carrying a cloaked woman and child, six swords standing upright in the hull, choppy water on one side and calm on the other.",
+      "symbols": [
+        "the swords carried, not discarded — the trouble comes along",
+        "rough water beside still water — moving out of turbulence mid-crossing",
+        "the passengers hooded and quiet — leaving is not the same as being over it"
+      ]
+    }
+  },
+  {
+    "id": "swords-07",
+    "name": "Seven of Swords",
+    "arcanaType": "minor",
+    "suit": "swords",
+    "number": 7,
+    "image": "tarot-cards/Swords07.jpg",
+    "uprightKeywords": [
+      "deception",
+      "trickery",
+      "tactics",
+      "cunning",
+      "betrayal"
+    ],
+    "reversedKeywords": [
+      "coming clean",
+      "conscience",
+      "deception discovered",
+      "shame",
+      "unmasked"
+    ],
+    "shortMeaning": "Calculated cunning and strategic retreat require stealth — but beware the cost of deception to your soul.",
+    "reversedMeaning": "Lies and deceptions unravel as the conscience awakens or the truth is dramatically brought to light.",
+    "nameZh": "寶劍七",
+    "goldenDawn": {
+      "gdTitle": "Unstable Effort, Futility",
+      "sephirah": "Netzach",
+      "astrological": "Moon in Aquarius"
+    },
+    "rws": {
+      "scene": "A man creeps away from a camp of tents carrying five swords by the blades, two still planted behind him, looking back over his shoulder.",
+      "symbols": [
+        "carrying the swords by the blades — a clever plan that cuts the hands",
+        "two left behind — the escape is incomplete",
+        "glancing back — he expects to be caught"
+      ]
+    }
+  },
+  {
+    "id": "swords-08",
+    "name": "Eight of Swords",
+    "arcanaType": "minor",
+    "suit": "swords",
+    "number": 8,
+    "image": "tarot-cards/Swords08.jpg",
+    "uprightKeywords": [
+      "restriction",
+      "imprisonment",
+      "victim mentality",
+      "self-limiting beliefs",
+      "trapped"
+    ],
+    "reversedKeywords": [
+      "self-acceptance",
+      "releasing limiting beliefs",
+      "freedom",
+      "new perspective",
+      "empowerment"
+    ],
+    "shortMeaning": "The blindfold and bindings are of your own mind — the path out exists if you're brave enough to look.",
+    "reversedMeaning": "The blindfold finally falls away, revealing the freedom that was available to you all along.",
+    "nameZh": "寶劍八",
+    "goldenDawn": {
+      "gdTitle": "Shortened Force, Interference",
+      "sephirah": "Hod",
+      "astrological": "Jupiter in Gemini"
+    },
+    "rws": {
+      "scene": "A bound and blindfolded woman stands in mud among eight swords planted around her, a castle on the hill behind, the swords leaving a clear gap in front.",
+      "symbols": [
+        "the gap in the swords — the way out is open and unseen",
+        "loose bindings — the restraint would not survive a real struggle",
+        "the castle above — whoever set this is elsewhere, not guarding her"
+      ]
+    }
+  },
+  {
+    "id": "swords-09",
+    "name": "Nine of Swords",
+    "arcanaType": "minor",
+    "suit": "swords",
+    "number": 9,
+    "image": "tarot-cards/Swords09.jpg",
+    "uprightKeywords": [
+      "anxiety",
+      "nightmares",
+      "worry",
+      "dread",
+      "mental anguish"
+    ],
+    "reversedKeywords": [
+      "hope",
+      "reaching out",
+      "overcoming fear",
+      "inner turmoil",
+      "releasing anguish"
+    ],
+    "shortMeaning": "The darkest hour of the mind where midnight fears loom largest — speak your fears to dissolve their power.",
+    "reversedMeaning": "After sitting with the nightmare, a turn toward hope and community offers genuine relief from mental anguish.",
+    "nameZh": "寶劍九",
+    "goldenDawn": {
+      "gdTitle": "Despair and Cruelty",
+      "sephirah": "Yesod",
+      "astrological": "Mars in Gemini"
+    },
+    "rws": {
+      "scene": "A person sits up in bed with their face in their hands, nine swords mounted on the black wall behind, the quilt embroidered with roses and zodiac signs.",
+      "symbols": [
+        "swords on the wall, not in the body — the dread is not yet fact",
+        "total darkness behind — this is the middle of the night, not the day",
+        "the patterned quilt — comfort within reach, unnoticed"
+      ]
+    }
+  },
+  {
+    "id": "swords-10",
+    "name": "Ten of Swords",
+    "arcanaType": "minor",
+    "suit": "swords",
+    "number": 10,
+    "image": "tarot-cards/Swords10.jpg",
+    "uprightKeywords": [
+      "painful endings",
+      "deep wounds",
+      "betrayal",
+      "loss",
+      "crisis"
+    ],
+    "reversedKeywords": [
+      "recovery",
+      "regeneration",
+      "resisting an inevitable end",
+      "survival",
+      "dawn after darkness"
+    ],
+    "shortMeaning": "Rock bottom arrives with ten swords in the back — but the dawn breaks over the horizon, promising renewal.",
+    "reversedMeaning": "Rising from rock bottom, survival instincts activate and the long journey of recovery begins at last.",
+    "nameZh": "寶劍十",
+    "goldenDawn": {
+      "gdTitle": "Ruin",
+      "sephirah": "Malkuth",
+      "astrological": "Sun in Gemini"
+    },
+    "rws": {
+      "scene": "A figure lies face down with ten swords in the back, under a black sky, calm water beside, a golden dawn breaking along the horizon.",
+      "symbols": [
+        "ten swords — theatrically excessive, the worst already complete",
+        "the dawn on the horizon — the sky is already turning",
+        "still water — the storm is spent"
+      ]
+    }
+  },
+  {
+    "id": "swords-page",
+    "name": "Page of Swords",
+    "arcanaType": "minor",
+    "suit": "swords",
+    "number": "Page",
+    "image": "tarot-cards/Swords11.jpg",
+    "uprightKeywords": [
+      "curiosity",
+      "restlessness",
+      "mental energy",
+      "new ideas",
+      "vigilance"
+    ],
+    "reversedKeywords": [
+      "haste",
+      "cynicism",
+      "sarcasm",
+      "deception",
+      "lacking tact"
+    ],
+    "shortMeaning": "Sharp-eyed and quick-witted, you cut through with swift questions and keen observational energy.",
+    "reversedMeaning": "Quick mind without wisdom becomes sharp-tongued and tactless, cutting where it should illuminate.",
+    "nameZh": "寶劍侍者",
+    "goldenDawn": {
+      "gdTitle": "Princess of Swords",
+      "elementalFormula": "Earth of Air",
+      "astrological": null
+    },
+    "rws": {
+      "scene": "A youth stands braced on rough ground holding a sword up in both hands, looking back over one shoulder, hair and clouds driven by wind, birds overhead.",
+      "symbols": [
+        "looking back while holding the sword up — vigilance verging on suspicion",
+        "the wind — restless mental energy with nowhere to settle",
+        "both hands on the hilt — more grip than skill"
+      ]
+    }
+  },
+  {
+    "id": "swords-knight",
+    "name": "Knight of Swords",
+    "arcanaType": "minor",
+    "suit": "swords",
+    "number": "Knight",
+    "image": "tarot-cards/Swords12.jpg",
+    "uprightKeywords": [
+      "action",
+      "ambition",
+      "directness",
+      "assertiveness",
+      "speed"
+    ],
+    "reversedKeywords": [
+      "no direction",
+      "scattered thought",
+      "recklessness",
+      "abrasiveness",
+      "tactless"
+    ],
+    "shortMeaning": "Charge forward with decisive clarity and fearless ambition — the direct path demands your full commitment.",
+    "reversedMeaning": "Reckless speed and abrasive directness alienate allies and scatter the focused energy needed for success.",
+    "nameZh": "寶劍騎士",
+    "goldenDawn": {
+      "gdTitle": "King of Swords",
+      "elementalFormula": "Fire of Air",
+      "astrological": null
+    },
+    "rws": {
+      "scene": "A knight charges at full gallop with sword raised, cloak and mane streaming, trees bent double behind him.",
+      "symbols": [
+        "full gallop — speed with no stopping distance",
+        "the storm-bent trees — the surroundings cannot absorb this pace",
+        "sword already raised — argument before arrival"
+      ]
+    }
+  },
+  {
+    "id": "swords-queen",
+    "name": "Queen of Swords",
+    "arcanaType": "minor",
+    "suit": "swords",
+    "number": "Queen",
+    "image": "tarot-cards/Swords13.jpg",
+    "uprightKeywords": [
+      "clarity",
+      "independence",
+      "unbiased judgment",
+      "experience",
+      "truth"
+    ],
+    "reversedKeywords": [
+      "cruelty",
+      "bitterness",
+      "cold-hearted",
+      "resentment",
+      "manipulation"
+    ],
+    "shortMeaning": "Clear-eyed and impartial, you wield the sword of truth with the earned wisdom of hard experience.",
+    "reversedMeaning": "Pain hardens into cruelty and bitterness, using sharp intellect as a weapon rather than a guide.",
+    "nameZh": "寶劍皇后",
+    "goldenDawn": {
+      "gdTitle": "Queen of Swords",
+      "elementalFormula": "Water of Air",
+      "astrological": null
+    },
+    "rws": {
+      "scene": "A stern queen sits on a throne carved with a sylph and butterflies, an upright sword in one hand, the other hand open and extended, clouds beneath her.",
+      "symbols": [
+        "the open hand — invitation and honesty offered together",
+        "the upright sword — clarity that has already cost her something",
+        "above the clouds — perspective bought by distance"
+      ]
+    }
+  },
+  {
+    "id": "swords-king",
+    "name": "King of Swords",
+    "arcanaType": "minor",
+    "suit": "swords",
+    "number": "King",
+    "image": "tarot-cards/Swords14.jpg",
+    "uprightKeywords": [
+      "mental clarity",
+      "authority",
+      "truth",
+      "decisiveness",
+      "intellectual power"
+    ],
+    "reversedKeywords": [
+      "abuse of power",
+      "tyranny",
+      "manipulation",
+      "coldness",
+      "irrational"
+    ],
+    "shortMeaning": "Rule with the combined powers of clear intellect and moral authority, cutting through noise to just truth.",
+    "reversedMeaning": "Intellectual authority becomes tyrannical when detached from compassion and bent toward manipulation.",
+    "nameZh": "寶劍國王",
+    "goldenDawn": {
+      "gdTitle": "Prince of Swords",
+      "elementalFormula": "Air of Air",
+      "astrological": null
+    },
+    "rws": {
+      "scene": "A king faces forward on a throne carved with butterflies and crescent moons, an upright sword tilted slightly, clouds massing behind.",
+      "symbols": [
+        "facing straight ahead — judgement without evasion",
+        "the slight tilt of the sword — the verdict is not perfectly impartial",
+        "butterflies on the throne — the mind remembers it once transformed"
+      ]
+    }
+  },
+  {
+    "id": "pentacles-ace",
+    "name": "Ace of Pentacles",
+    "arcanaType": "minor",
+    "suit": "pentacles",
+    "number": 1,
+    "image": "tarot-cards/Pents01.jpg",
+    "uprightKeywords": [
+      "new financial opportunity",
+      "manifestation",
+      "abundance",
+      "security",
+      "prosperity"
+    ],
+    "reversedKeywords": [
+      "lost opportunity",
+      "lack of planning",
+      "scarcity",
+      "missed chance",
+      "instability"
+    ],
+    "shortMeaning": "A golden coin of opportunity is offered — plant this seed of material abundance with careful intention.",
+    "reversedMeaning": "A financial opportunity slips away through poor planning or a scarcity mindset that repels abundance.",
+    "nameZh": "錢幣一",
+    "goldenDawn": {
+      "gdTitle": "Root of the Powers of Earth",
+      "sephirah": "Kether",
+      "astrological": "Pure Earth"
+    },
+    "rws": {
+      "scene": "A hand from a cloud holds out a large pentacle above a walled garden of white lilies, an arched gate opening onto mountains.",
+      "symbols": [
+        "the garden gate — an opening onto something you would have to walk to",
+        "lilies, cultivated — this abundance is tended, not wild",
+        "the coin held flat — offered, and heavy"
+      ]
+    }
+  },
+  {
+    "id": "pentacles-02",
+    "name": "Two of Pentacles",
+    "arcanaType": "minor",
+    "suit": "pentacles",
+    "number": 2,
+    "image": "tarot-cards/Pents02.jpg",
+    "uprightKeywords": [
+      "balance",
+      "adaptability",
+      "time management",
+      "juggling priorities",
+      "flexibility"
+    ],
+    "reversedKeywords": [
+      "imbalance",
+      "disorganization",
+      "overwhelm",
+      "reprioritization needed",
+      "financial stress"
+    ],
+    "shortMeaning": "Juggle life's demands with graceful adaptability — the dance of balance keeps all priorities in motion.",
+    "reversedMeaning": "Too many balls in the air begins to show — disorganization and overwhelm signal the need to reprioritize.",
+    "nameZh": "錢幣二",
+    "goldenDawn": {
+      "gdTitle": "Harmonious Change",
+      "sephirah": "Chokmah",
+      "astrological": "Jupiter in Capricorn"
+    },
+    "rws": {
+      "scene": "A young man dances balancing two pentacles inside a looping infinity ribbon, two ships riding high waves behind him.",
+      "symbols": [
+        "the infinity ribbon — juggling that could continue indefinitely",
+        "the ships on rough swell — conditions are not calm underneath",
+        "dancing, not straining — competence that looks like play"
+      ]
+    }
+  },
+  {
+    "id": "pentacles-03",
+    "name": "Three of Pentacles",
+    "arcanaType": "minor",
+    "suit": "pentacles",
+    "number": 3,
+    "image": "tarot-cards/Pents03.jpg",
+    "uprightKeywords": [
+      "teamwork",
+      "collaboration",
+      "skill",
+      "quality",
+      "building"
+    ],
+    "reversedKeywords": [
+      "misalignment",
+      "competition",
+      "poor teamwork",
+      "mediocrity",
+      "lack of skill"
+    ],
+    "shortMeaning": "Master craftspeople collaborate in sacred space — excellence is built through skilled and willing teamwork.",
+    "reversedMeaning": "Team misalignment or poor communication undermines the quality of the work being constructed together.",
+    "nameZh": "錢幣三",
+    "goldenDawn": {
+      "gdTitle": "Material Works",
+      "sephirah": "Binah",
+      "astrological": "Mars in Capricorn"
+    },
+    "rws": {
+      "scene": "A sculptor stands on a bench in a cathedral showing his carving to a monk and a nobleman holding architectural plans.",
+      "symbols": [
+        "three people, three roles — craft, vision and funding in one room",
+        "the sculptor raised on a bench — the maker's word carries here",
+        "an unfinished cathedral — long work, early stage"
+      ]
+    }
+  },
+  {
+    "id": "pentacles-04",
+    "name": "Four of Pentacles",
+    "arcanaType": "minor",
+    "suit": "pentacles",
+    "number": 4,
+    "image": "tarot-cards/Pents04.jpg",
+    "uprightKeywords": [
+      "saving",
+      "security",
+      "conservatism",
+      "scarcity",
+      "control"
+    ],
+    "reversedKeywords": [
+      "greed",
+      "materialism",
+      "self-protection",
+      "hoarding",
+      "financial instability"
+    ],
+    "shortMeaning": "Holding tightly to resources brings security but risks clutching too hard, blocking the flow of abundance.",
+    "reversedMeaning": "Hoarding from fear of scarcity paradoxically creates the poverty mindset that keeps abundance away.",
+    "nameZh": "錢幣四",
+    "goldenDawn": {
+      "gdTitle": "Earthly Power",
+      "sephirah": "Chesed",
+      "astrological": "Sun in Capricorn"
+    },
+    "rws": {
+      "scene": "A crowned figure grips one pentacle against his chest, balances another on his crown and pins two beneath his feet, a city behind him.",
+      "symbols": [
+        "all four pentacles held down — nothing circulating",
+        "the pentacle on the crown — identity fused with holding on",
+        "the city at his back — he sits outside what he is guarding against"
+      ]
+    }
+  },
+  {
+    "id": "pentacles-05",
+    "name": "Five of Pentacles",
+    "arcanaType": "minor",
+    "suit": "pentacles",
+    "number": 5,
+    "image": "tarot-cards/Pents05.jpg",
+    "uprightKeywords": [
+      "financial loss",
+      "poverty",
+      "lack mindset",
+      "isolation",
+      "worry"
+    ],
+    "reversedKeywords": [
+      "recovery",
+      "spiritual poverty",
+      "new hope",
+      "inner resources",
+      "reconnection"
+    ],
+    "shortMeaning": "Out in the cold, struggling through lack — yet the warm light of support shines in the window above.",
+    "reversedMeaning": "A period of lack begins to ease as inner resources and available support are finally noticed and received.",
+    "nameZh": "錢幣五",
+    "goldenDawn": {
+      "gdTitle": "Material Trouble, Worry",
+      "sephirah": "Geburah",
+      "astrological": "Mercury in Taurus"
+    },
+    "rws": {
+      "scene": "Two beggars pass through snow beneath a lit stained-glass window — one on crutches, one barefoot and bandaged.",
+      "symbols": [
+        "the lit window right above them — help present and unseen",
+        "two of them together — hardship shared, not solitary",
+        "passing by, not stopping — they do not think it is for them"
+      ]
+    }
+  },
+  {
+    "id": "pentacles-06",
+    "name": "Six of Pentacles",
+    "arcanaType": "minor",
+    "suit": "pentacles",
+    "number": 6,
+    "image": "tarot-cards/Pents06.jpg",
+    "uprightKeywords": [
+      "generosity",
+      "charity",
+      "giving",
+      "receiving",
+      "sharing wealth"
+    ],
+    "reversedKeywords": [
+      "strings attached",
+      "power dynamics",
+      "debt",
+      "greed",
+      "inequality"
+    ],
+    "shortMeaning": "The balanced scales of giving and receiving create a harmonious flow of abundance through your world.",
+    "reversedMeaning": "Generosity with strings attached creates unhealthy power dynamics rather than genuine reciprocal exchange.",
+    "nameZh": "錢幣六",
+    "goldenDawn": {
+      "gdTitle": "Material Success",
+      "sephirah": "Tiphareth",
+      "astrological": "Moon in Taurus"
+    },
+    "rws": {
+      "scene": "A merchant holds level scales in one hand while dropping coins into the hands of two kneeling beggars.",
+      "symbols": [
+        "the scales — generosity that is being measured",
+        "one gives, two kneel — the exchange is not between equals",
+        "open palms below — receiving requires a posture"
+      ]
+    }
+  },
+  {
+    "id": "pentacles-07",
+    "name": "Seven of Pentacles",
+    "arcanaType": "minor",
+    "suit": "pentacles",
+    "number": 7,
+    "image": "tarot-cards/Pents07.jpg",
+    "uprightKeywords": [
+      "assessment",
+      "patience",
+      "long-term reward",
+      "investment",
+      "perseverance"
+    ],
+    "reversedKeywords": [
+      "poor investment",
+      "impatience",
+      "limited long-term vision",
+      "distraction",
+      "procrastination"
+    ],
+    "shortMeaning": "Pause over your harvest and assess — patient tending of this crop will yield the rich reward you seek.",
+    "reversedMeaning": "Impatience and poor investment choices rob the garden of the patient tending it needs to truly flourish.",
+    "nameZh": "錢幣七",
+    "goldenDawn": {
+      "gdTitle": "Success Unfulfilled, Failure",
+      "sephirah": "Netzach",
+      "astrological": "Saturn in Taurus"
+    },
+    "rws": {
+      "scene": "A young man leans on a hoe, looking at seven pentacles growing on a leafy bush.",
+      "symbols": [
+        "leaning on the tool — a deliberate pause in the middle of labour",
+        "fruit on the vine, unpicked — grown but not yet gathered",
+        "his gaze on the crop — assessment, and some doubt"
+      ]
+    }
+  },
+  {
+    "id": "pentacles-08",
+    "name": "Eight of Pentacles",
+    "arcanaType": "minor",
+    "suit": "pentacles",
+    "number": 8,
+    "image": "tarot-cards/Pents08.jpg",
+    "uprightKeywords": [
+      "diligence",
+      "mastery",
+      "skill development",
+      "dedication",
+      "craftsmanship"
+    ],
+    "reversedKeywords": [
+      "perfectionism",
+      "lack of focus",
+      "poor quality",
+      "cutting corners",
+      "misdirected activity"
+    ],
+    "shortMeaning": "Dedicated practice and devoted craftsmanship turn raw talent into mastery one deliberate repetition at a time.",
+    "reversedMeaning": "Cutting corners or perfectionism that prevents completion undermines the mastery you're striving toward.",
+    "nameZh": "錢幣八",
+    "goldenDawn": {
+      "gdTitle": "Prudence",
+      "sephirah": "Hod",
+      "astrological": "Sun in Virgo"
+    },
+    "rws": {
+      "scene": "A craftsman at a bench carves a pentacle, six finished ones mounted on a post beside him and one at his feet, a town in the distance.",
+      "symbols": [
+        "six already hung up — repetition that has become skill",
+        "the distant town — he has withdrawn from company to work",
+        "head down at the bench — absorbed, not performing"
+      ]
+    }
+  },
+  {
+    "id": "pentacles-09",
+    "name": "Nine of Pentacles",
+    "arcanaType": "minor",
+    "suit": "pentacles",
+    "number": 9,
+    "image": "tarot-cards/Pents09.jpg",
+    "uprightKeywords": [
+      "luxury",
+      "self-sufficiency",
+      "independence",
+      "abundance",
+      "financial freedom"
+    ],
+    "reversedKeywords": [
+      "self-worth issues",
+      "financial setbacks",
+      "over-investment",
+      "deceit",
+      "superficiality"
+    ],
+    "shortMeaning": "Standing in your abundant garden, you enjoy the luxurious fruits of your self-made independence and success.",
+    "reversedMeaning": "Material comfort without inner contentment reveals unresolved self-worth issues beneath the surface.",
+    "nameZh": "錢幣九",
+    "goldenDawn": {
+      "gdTitle": "Material Gain",
+      "sephirah": "Yesod",
+      "astrological": "Venus in Virgo"
+    },
+    "rws": {
+      "scene": "A richly dressed woman stands alone in a walled vineyard with a hooded falcon on her gloved hand, a snail on the ground beside her.",
+      "symbols": [
+        "the hooded falcon — appetite trained and kept still",
+        "the walled garden — plenty, and enclosure",
+        "the snail — slow accumulation, carrying its own house"
+      ]
+    }
+  },
+  {
+    "id": "pentacles-10",
+    "name": "Ten of Pentacles",
+    "arcanaType": "minor",
+    "suit": "pentacles",
+    "number": 10,
+    "image": "tarot-cards/Pents10.jpg",
+    "uprightKeywords": [
+      "legacy",
+      "inheritance",
+      "wealth",
+      "family",
+      "lasting success"
+    ],
+    "reversedKeywords": [
+      "family disputes",
+      "financial failure",
+      "broken tradition",
+      "fleeting success",
+      "loss of legacy"
+    ],
+    "shortMeaning": "Enduring wealth, family legacy, and the satisfaction of lasting success built across generations.",
+    "reversedMeaning": "Family conflict or short-sighted choices erode the lasting legacy that should be passed forward.",
+    "nameZh": "錢幣十",
+    "goldenDawn": {
+      "gdTitle": "Wealth",
+      "sephirah": "Malkuth",
+      "astrological": "Mercury in Virgo"
+    },
+    "rws": {
+      "scene": "An old man with two dogs sits at an archway while a couple and a child stand nearby, ten pentacles arranged across the scene in the pattern of the Tree of Life.",
+      "symbols": [
+        "three generations in one frame — wealth measured across time",
+        "the pentacles in the Tree of Life pattern — the material fully worked out",
+        "the old man unnoticed by the others — the founder already in the background"
+      ]
+    }
+  },
+  {
+    "id": "pentacles-page",
+    "name": "Page of Pentacles",
+    "arcanaType": "minor",
+    "suit": "pentacles",
+    "number": "Page",
+    "image": "tarot-cards/Pents11.jpg",
+    "uprightKeywords": [
+      "manifestation",
+      "financial opportunity",
+      "skill development",
+      "studious",
+      "new ambitions"
+    ],
+    "reversedKeywords": [
+      "lack of progress",
+      "procrastination",
+      "missed opportunity",
+      "poor financial choices",
+      "unfocused"
+    ],
+    "shortMeaning": "A student of the material world gazes at a golden pentacle, ready to learn and build something lasting.",
+    "reversedMeaning": "Procrastination and lack of focus delay the manifestation of the practical ambitions you hold.",
+    "nameZh": "錢幣侍者",
+    "goldenDawn": {
+      "gdTitle": "Princess of Pentacles",
+      "elementalFormula": "Earth of Earth",
+      "astrological": null
+    },
+    "rws": {
+      "scene": "A youth stands in a flowering field holding a pentacle aloft in both hands, absorbed in looking at it.",
+      "symbols": [
+        "both hands and full attention on the coin — study before spending",
+        "the flowering field — fertile ground, nothing built yet",
+        "standing still — the plan has not moved yet"
+      ]
+    }
+  },
+  {
+    "id": "pentacles-knight",
+    "name": "Knight of Pentacles",
+    "arcanaType": "minor",
+    "suit": "pentacles",
+    "number": "Knight",
+    "image": "tarot-cards/Pents12.jpg",
+    "uprightKeywords": [
+      "hard work",
+      "reliability",
+      "practicality",
+      "ambition",
+      "patience"
+    ],
+    "reversedKeywords": [
+      "laziness",
+      "boredom",
+      "stuck in routine",
+      "perfectionism",
+      "complacency"
+    ],
+    "shortMeaning": "Slow, steady, and supremely reliable, this knight shows that methodical determination achieves lasting goals.",
+    "reversedMeaning": "Complacency and boredom stagnate a knight whose dependability has curdled into stubborn inflexibility.",
+    "nameZh": "錢幣騎士",
+    "goldenDawn": {
+      "gdTitle": "King of Pentacles",
+      "elementalFormula": "Fire of Earth",
+      "astrological": null
+    },
+    "rws": {
+      "scene": "An armoured knight sits motionless on a heavy black horse holding out a pentacle, a ploughed field behind him.",
+      "symbols": [
+        "the horse standing still — the only stationary knight in the deck",
+        "the ploughed field — work already done, methodically",
+        "the pentacle held out flat — steady, unglamorous reliability"
+      ]
+    }
+  },
+  {
+    "id": "pentacles-queen",
+    "name": "Queen of Pentacles",
+    "arcanaType": "minor",
+    "suit": "pentacles",
+    "number": "Queen",
+    "image": "tarot-cards/Pents13.jpg",
+    "uprightKeywords": [
+      "nurturing",
+      "practical",
+      "financial security",
+      "warmth",
+      "resourcefulness"
+    ],
+    "reversedKeywords": [
+      "financial insecurity",
+      "imbalance",
+      "smothering",
+      "self-centeredness",
+      "neglect"
+    ],
+    "shortMeaning": "Earthly wisdom and nurturing warmth create a sanctuary of abundance, comfort, and practical security.",
+    "reversedMeaning": "Anxiety around financial security leads to smothering those in your care or neglecting your own needs.",
+    "nameZh": "錢幣皇后",
+    "goldenDawn": {
+      "gdTitle": "Queen of Pentacles",
+      "elementalFormula": "Water of Earth",
+      "astrological": null
+    },
+    "rws": {
+      "scene": "A queen sits on a throne carved with fruit and goats' heads, cradling a pentacle in her lap and gazing down at it, roses overhead and a rabbit at her feet.",
+      "symbols": [
+        "the coin cradled like something living — resources treated as care",
+        "the rabbit — fertility, and quick unsentimental instinct",
+        "her gaze down, not out — attention to what is actually in her hands"
+      ]
+    }
+  },
+  {
+    "id": "pentacles-king",
+    "name": "King of Pentacles",
+    "arcanaType": "minor",
+    "suit": "pentacles",
+    "number": "King",
+    "image": "tarot-cards/Pents14.jpg",
+    "uprightKeywords": [
+      "wealth",
+      "business",
+      "leadership",
+      "security",
+      "discipline"
+    ],
+    "reversedKeywords": [
+      "greed",
+      "corruption",
+      "excessively cautious",
+      "stubborn",
+      "bribery"
+    ],
+    "shortMeaning": "Master of the material world, your disciplined leadership builds enduring wealth and rock-solid security.",
+    "reversedMeaning": "Material success corrupts into greed and stubbornness, sacrificing integrity for the protection of wealth.",
+    "nameZh": "錢幣國王",
+    "goldenDawn": {
+      "gdTitle": "Prince of Pentacles",
+      "elementalFormula": "Air of Earth",
+      "astrological": null
+    },
+    "rws": {
+      "scene": "A king sits on a bull-carved throne in a robe patterned with grapevines, one hand on a pentacle, a castle and vines behind him.",
+      "symbols": [
+        "grapes on the robe — wealth that grew rather than was seized",
+        "the bull throne — stubborn, fertile, immovable",
+        "the castle behind — the estate is built; this is stewardship now"
+      ]
+    }
+  }
+]

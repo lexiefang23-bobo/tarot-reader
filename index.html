@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tarot Reader</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&family=Newsreader:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  .gb-ti::-webkit-input-placeholder { color:#C4B49A; }
+  textarea, input { font-family:'Nunito',sans-serif; }
+  @keyframes gb-fall { to { transform: translateY(108vh) rotate(560deg); opacity: 0; } }
+  @keyframes gb-pop { 0%{transform:scale(.72);opacity:0} 60%{transform:scale(1.04)} 100%{transform:scale(1);opacity:1} }
+  @keyframes gb-fade { from{opacity:0} to{opacity:1} }
+  @keyframes gb-pulse { 0%,100%{opacity:1} 50%{opacity:.5} }
+  /* 8s = 4s inhale + 4s exhale, a calm resting breath */
+  @keyframes gb-breathe { 0%,100%{transform:scale(.62); opacity:.55} 50%{transform:scale(1); opacity:1} }
+  @keyframes gb-breathe-dot { 0%,100%{transform:scale(.85); opacity:.6} 50%{transform:scale(1.15); opacity:1} }
+</style>
+</helmet>
+
+<div style="min-height:100vh; background:#0a0714; font-family:'Nunito',sans-serif;">
+  <!-- ===== TAROT PANEL ===== -->
+  <sc-if value="{{ tarotOpen }}" hint-placeholder-val="{{ false }}">
+    <div style="position:fixed; inset:0; z-index:460; background:radial-gradient(ellipse at 50% 0%, #1a1030 0%, #0a0714 60%); display:flex; flex-direction:column; animation:gb-fade .2s ease; overflow-y:auto;">
+      <div style="max-width:760px; margin:0 auto; width:100%; padding:28px 24px 64px; display:flex; flex-direction:column; align-items:center; min-height:100%;">
+
+        <!-- header -->
+        <div style="width:100%; display:flex; align-items:center; justify-content:space-between; margin-bottom:8px;">
+          <div style="display:flex; align-items:center; gap:10px;">
+            <span style="font-size:20px;">🔮</span>
+            <span style="font:italic 400 22px/1 'DM Serif Display',serif; color:#E8DFF5;">{{ t.tarotTitle }}</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:10px;">
+            <div style="display:flex; border:1px solid rgba(201,162,75,.4); border-radius:999px; overflow:hidden;">
+              <button onClick="{{ onLangZh }}" style="{{ tarot.langZhStyle }}">中文</button>
+              <button onClick="{{ onLangEn }}" style="{{ tarot.langEnStyle }}">EN</button>
+            </div>
+            <sc-if value="{{ tarot.showReset }}" hint-placeholder-val="{{ false }}">
+              <button onClick="{{ resetTarot }}" style="background:none; border:1px solid rgba(201,162,75,.4); border-radius:999px; padding:6px 13px; font:700 10px/1 'Nunito'; color:#C9A24B; cursor:pointer; letter-spacing:.04em;">{{ t.tarotReset }}</button>
+            </sc-if>
+          </div>
+        </div>
+        <div style="width:100%; height:1px; background:linear-gradient(to right, transparent, rgba(201,162,75,.3), transparent); margin-bottom:28px;"></div>
+
+        <!-- ── Phase: question ── -->
+        <sc-if value="{{ tarot.isQuestion }}" hint-placeholder-val="{{ false }}">
+          <div style="text-align:center; margin-top:40px; width:100%; max-width:480px;">
+            <div style="font:italic 400 26px/1.3 'DM Serif Display',serif; color:#E8DFF5; margin-bottom:10px;">{{ t.tarotQTitle }}</div>
+            <div style="font:500 13px/1.6 'Nunito'; color:#9A8DBE; margin-bottom:28px;">{{ t.tarotQSub }}</div>
+            <textarea autoFocus="{{ true }}" value="{{ tarot.draft }}" onInput="{{ tarot.onDraftInput }}" onKeyDown="{{ tarot.onDraftKey }}" placeholder="{{ t.tarotQPlaceholder }}" rows="3" style="width:100%; background:rgba(255,255,255,.04); border:1.5px solid rgba(201,162,75,.35); border-radius:14px; padding:14px 16px; font:500 14px/1.6 'Nunito'; color:#E8DFF5; outline:none; resize:none; box-sizing:border-box;"></textarea>
+            <button onClick="{{ tarot.onSubmitQuestion }}" disabled="{{ !tarot.canSubmit }}" style="{{ tarot.submitBtnStyle }}">{{ t.tarotDraw }}</button>
+
+            <!-- ── Sky panel: real current sky + the card the Sun is sitting on ── -->
+            <sc-if value="{{ tarot.hasSky }}" hint-placeholder-val="{{ false }}">
+              <div style="margin-top:34px; padding:16px 18px; background:rgba(255,255,255,.03); border:1px solid rgba(201,162,75,.22); border-radius:16px; text-align:left;">
+                <div style="font:700 9px/1 'Nunito'; letter-spacing:.14em; text-transform:uppercase; color:#C9A24B; margin-bottom:12px;">{{ t.tarotSkyTitle }}</div>
+                <div style="display:flex; gap:14px; align-items:center;">
+                  <div style="flex:1; min-width:0;">
+                    <div style="display:flex; justify-content:space-between; font:500 12px/1.9 'Nunito'; color:#C8BEDC;">
+                      <span style="color:#9A8DBE;">☉ {{ t.tarotSkySun }}</span><span>{{ tarot.sky.sunText }}</span>
+                    </div>
+                    <div style="display:flex; justify-content:space-between; font:500 12px/1.9 'Nunito'; color:#C8BEDC;">
+                      <span style="color:#9A8DBE;">☾ {{ t.tarotSkyMoon }}</span><span>{{ tarot.sky.moonText }}</span>
+                    </div>
+                    <div style="display:flex; justify-content:space-between; font:500 12px/1.9 'Nunito'; color:#C8BEDC;">
+                      <span style="color:#9A8DBE;">{{ t.tarotSkyPhase }}</span><span>{{ tarot.sky.phaseText }} · {{ tarot.sky.illumination }}%</span>
+                    </div>
+                    <div style="font:italic 500 11px/1.6 'Nunito'; color:#C9A24B; margin-top:7px;">{{ tarot.sky.tideText }}</div>
+                  </div>
+                  <div style="width:1px; align-self:stretch; background:rgba(201,162,75,.2);"></div>
+                  <div style="width:96px; flex-shrink:0; text-align:center;">
+                    <div style="font:700 8px/1 'Nunito'; letter-spacing:.1em; text-transform:uppercase; color:#9A8DBE; margin-bottom:7px;">{{ t.tarotSkyToday }}</div>
+                    <div style="width:56px; height:90px; margin:0 auto 7px; border-radius:7px; overflow:hidden; border:1px solid rgba(201,162,75,.5); box-shadow:0 0 14px rgba(201,162,75,.25);">
+                      <img src="{{ tarot.sky.cardImage }}" style="width:100%; height:100%; object-fit:cover;" />
+                    </div>
+                    <div style="font:700 10px/1.3 'DM Serif Display',serif; font-style:italic; color:#E8DFF5;">{{ tarot.sky.cardName }}</div>
+                    <div style="font:500 9px/1.3 'Nunito'; color:#9A8DBE; margin-top:2px;">{{ tarot.sky.cardTitle }}</div>
+                    <div style="font:500 8px/1.3 'Nunito'; color:#C9A24B; margin-top:4px;">{{ tarot.sky.spanText }}</div>
+                    <sc-if value="{{ tarot.sky.hasMoonCard }}" hint-placeholder-val="{{ false }}">
+                      <div style="display:flex; align-items:center; gap:6px; justify-content:center; margin-top:10px; padding-top:9px; border-top:1px solid rgba(201,162,75,.18);">
+                        <div style="width:22px; height:35px; border-radius:4px; overflow:hidden; border:1px solid rgba(201,162,75,.35); flex-shrink:0;">
+                          <img src="{{ tarot.sky.moonCardImage }}" style="width:100%; height:100%; object-fit:cover;" />
+                        </div>
+                        <div style="text-align:left; min-width:0;">
+                          <div style="font:700 7px/1 'Nunito'; letter-spacing:.08em; text-transform:uppercase; color:#9A8DBE;">☾ {{ t.tarotSkyMoonCard }}</div>
+                          <div style="font:600 9px/1.3 'Nunito'; color:#C8BEDC; margin-top:2px;">{{ tarot.sky.moonCardName }}</div>
+                        </div>
+                      </div>
+                    </sc-if>
+                  </div>
+                </div>
+                <div style="font:400 10px/1.5 'Nunito'; color:#6F6490; margin-top:11px;">{{ t.tarotSkyLit }}</div>
+              </div>
+            </sc-if>
+          </div>
+        </sc-if>
+
+        <!-- ── Phase: cut ── -->
+        <sc-if value="{{ tarot.isCutting }}" hint-placeholder-val="{{ false }}">
+          <div style="text-align:center; margin-top:56px; width:100%;">
+            <div style="font:italic 400 24px/1.3 'DM Serif Display',serif; color:#E8DFF5; margin-bottom:10px;">{{ t.tarotCutTitle }}</div>
+            <div style="font:500 13px/1.7 'Nunito'; color:#9A8DBE; max-width:340px; margin:0 auto 32px;">{{ t.tarotCutSub }}</div>
+            <div style="display:flex; justify-content:center; align-items:center; padding:10px 0;">
+              <sc-for list="{{ tarot.cutSlots }}" as="cs" hint-placeholder-count="12">
+                <div onClick="{{ cs.onCut }}" style="{{ cs.style }}"></div>
+              </sc-for>
+            </div>
+          </div>
+        </sc-if>
+
+        <!-- ── Phase: selecting-spread ── -->
+        <sc-if value="{{ tarot.isSelectingSpread }}" hint-placeholder-val="{{ false }}">
+          <div style="text-align:center; margin-top:64px;">
+            <!-- one 8s breath cycle: the circle swells 4s (inhale) and settles 4s (exhale).
+                 This runs while the spread API call is in flight, so the ritual costs no extra wait. -->
+            <div style="position:relative; width:150px; height:150px; margin:0 auto 26px;">
+              <div style="position:absolute; inset:0; border-radius:50%; border:1px solid rgba(201,162,75,.28);"></div>
+              <div style="position:absolute; inset:0; border-radius:50%; background:radial-gradient(circle, rgba(201,162,75,.30), rgba(201,162,75,0) 70%); animation:gb-breathe 8s ease-in-out infinite;"></div>
+              <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:26px; color:#C9A24B; animation:gb-breathe-dot 8s ease-in-out infinite;">✦</div>
+            </div>
+            <div style="font:italic 400 19px/1.5 'DM Serif Display',serif; color:#E8DFF5; margin-bottom:8px;">{{ t.tarotBreathe }}</div>
+            <div style="font:500 13px/1.7 'Nunito'; color:#9A8DBE; max-width:300px; margin:0 auto;">{{ t.tarotBreatheSub }}</div>
+            <div style="font:500 11px/1 'Nunito'; color:#6F6490; margin-top:22px; letter-spacing:.06em;">{{ t.tarotSelecting }}</div>
+          </div>
+        </sc-if>
+
+        <!-- ── Phase: select-cards ── -->
+        <sc-if value="{{ tarot.isSelectCards }}" hint-placeholder-val="{{ false }}">
+          <div style="width:100%;">
+            <div style="text-align:center; margin-bottom:6px;">
+              <p style="font:italic 500 13px/1.6 'Nunito'; color:#9A8DBE; max-width:420px; margin:0 auto 14px;">「{{ tarot.question }}」</p>
+              <div style="font:700 10px/1 'Nunito'; letter-spacing:.12em; text-transform:uppercase; color:#C9A24B;">{{ tarot.selectedLabel }}</div>
+            </div>
+            <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:6px; margin:16px 0 20px; max-height:340px; overflow-y:auto; padding:14px;">
+              <sc-for list="{{ tarot.deck }}" as="c" hint-placeholder-count="24">
+                <div onClick="{{ c.onClick }}" style="{{ c.cardBackStyle }}">✦</div>
+              </sc-for>
+            </div>
+            <div style="text-align:center;">
+              <button onClick="{{ tarot.onConfirmSelection }}" disabled="{{ !tarot.canConfirm }}" style="{{ tarot.confirmBtnStyle }}">{{ t.tarotConfirm }}</button>
+            </div>
+          </div>
+        </sc-if>
+
+        <!-- ── Phase: drawn ── -->
+        <sc-if value="{{ tarot.isDrawn }}" hint-placeholder-val="{{ false }}">
+          <div style="width:100%; text-align:center;">
+            <p style="font:italic 500 13px/1.6 'Nunito'; color:#9A8DBE; max-width:420px; margin:0 auto 24px;">「{{ tarot.question }}」</p>
+            <sc-if value="{{ tarot.hasError }}" hint-placeholder-val="{{ false }}">
+              <div style="background:rgba(180,60,60,.15); border:1px solid rgba(220,120,100,.4); border-radius:12px; padding:14px 18px; margin-bottom:20px; font:600 12px/1.5 'Nunito'; color:#E5A897;">⚠️ {{ tarot.errorMsg }}</div>
+            </sc-if>
+            <div style="display:flex; justify-content:center; gap:18px; flex-wrap:wrap; margin-bottom:26px;">
+              <sc-for list="{{ tarot.drawnSlots }}" as="slot" hint-placeholder-count="3">
+                <div style="display:flex; flex-direction:column; align-items:center; gap:10px; width:110px;">
+                  <div onClick="{{ slot.onReveal }}" style="{{ slot.cardBackStyle }}">
+                    <sc-if value="{{ slot.isRevealed }}" hint-placeholder-val="{{ false }}">
+                      <img src="{{ slot.image }}" style="{{ slot.imgStyle }}" />
+                    </sc-if>
+                    <sc-if value="{{ slot.isRevealed }}" hint-placeholder-val="{{ true }}">
+                      <span>✦</span>
+                    </sc-if>
+                  </div>
+                  <div style="font:700 10px/1.3 'Nunito'; letter-spacing:.06em; color:#C9A24B; text-align:center;">{{ slot.posName }}</div>
+                </div>
+              </sc-for>
+            </div>
+            <sc-if value="{{ tarot.hasUnrevealed }}" hint-placeholder-val="{{ true }}">
+              <button onClick="{{ tarot.onRevealAll }}" style="background:none; border:1px solid rgba(201,162,75,.5); border-radius:999px; padding:9px 22px; font:700 11px/1 'Nunito'; color:#C9A24B; cursor:pointer;">{{ t.tarotRevealAll }}</button>
+            </sc-if>
+          </div>
+        </sc-if>
+
+        <!-- ── Phase: reading ── -->
+        <sc-if value="{{ tarot.isReading }}" hint-placeholder-val="{{ false }}">
+          <div style="text-align:center; margin-top:80px;">
+            <div style="font-size:34px; margin-bottom:16px; animation:gb-pulse 1.4s ease-in-out infinite;">✦</div>
+            <div style="font:italic 400 18px/1.4 'DM Serif Display',serif; color:#E8DFF5;">{{ t.tarotReading }}</div>
+          </div>
+        </sc-if>
+
+        <!-- ── Phase: complete ── -->
+        <sc-if value="{{ tarot.isComplete }}" hint-placeholder-val="{{ false }}">
+          <div style="width:100%;">
+            <p style="font:italic 500 13px/1.6 'Nunito'; color:#9A8DBE; text-align:center; max-width:420px; margin:0 auto 24px;">「{{ tarot.question }}」</p>
+
+            <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap; margin-bottom:28px;">
+              <sc-for list="{{ tarot.readingCards }}" as="rc" hint-placeholder-count="3">
+                <div style="width:130px; display:flex; flex-direction:column; align-items:center; gap:8px;">
+                  <div style="width:100px; height:160px; border-radius:10px; overflow:hidden; border:1.5px solid rgba(201,162,75,.5);">
+                    <img src="{{ rc.image }}" style="{{ rc.imgStyle }}" />
+                  </div>
+                  <div style="font:700 11px/1.3 'DM Serif Display',serif; font-style:italic; color:#E8DFF5; text-align:center;">{{ rc.name }}</div>
+                </div>
+              </sc-for>
+            </div>
+
+            <div style="background:rgba(201,162,75,.08); border:1px solid rgba(201,162,75,.3); border-radius:16px; padding:20px 22px; margin-bottom:14px;">
+              <div style="font:700 9px/1 'Nunito'; letter-spacing:.14em; text-transform:uppercase; color:#C9A24B; margin-bottom:8px;">{{ t.tarotAnswer }}</div>
+              <div style="font:italic 500 17px/1.5 'DM Serif Display',serif; color:#F0E9FA;">{{ tarot.tldr }}</div>
+            </div>
+
+            <sc-if value="{{ tarot.hasTiming }}" hint-placeholder-val="{{ false }}">
+              <div style="display:flex; gap:10px; align-items:flex-start; background:rgba(143,169,216,.08); border:1px solid rgba(143,169,216,.28); border-radius:14px; padding:14px 18px; margin-bottom:24px;">
+                <div style="font-size:15px; line-height:1.4; flex-shrink:0;">⏳</div>
+                <div>
+                  <div style="font:700 9px/1 'Nunito'; letter-spacing:.14em; text-transform:uppercase; color:#8FA9D8; margin-bottom:5px;">{{ t.tarotTiming }}</div>
+                  <div style="font:500 13px/1.6 'Nunito'; color:#C8BEDC;">{{ tarot.timing }}</div>
+                </div>
+              </div>
+            </sc-if>
+
+            <sc-for list="{{ tarot.readingCards }}" as="rc2" hint-placeholder-count="3">
+              <div style="margin-bottom:14px; padding:14px 16px; background:rgba(255,255,255,.03); border-radius:12px; border-left:2px solid rgba(201,162,75,.4);">
+                <div style="font:700 10px/1 'Nunito'; letter-spacing:.06em; color:#C9A24B; margin-bottom:6px;">{{ rc2.posName }} · {{ rc2.name }}</div>
+                <div style="font:400 13px/1.6 'Nunito'; color:#C8BEDC;">{{ rc2.interpretation }}</div>
+              </div>
+            </sc-for>
+
+            <div style="height:1px; background:linear-gradient(to right, transparent, rgba(201,162,75,.3), transparent); margin:24px 0;"></div>
+
+            <div style="font:700 9px/1 'Nunito'; letter-spacing:.14em; text-transform:uppercase; color:#C9A24B; margin-bottom:12px;">{{ t.tarotFullReading }}</div>
+            <sc-for list="{{ tarot.narrativeParas }}" as="para" hint-placeholder-count="4">
+              <p style="font:400 14px/1.85 'Nunito'; color:#D8CFEA; margin:0 0 16px;">{{ para }}</p>
+            </sc-for>
+
+            <div style="background:rgba(255,255,255,.03); border:1px solid rgba(201,162,75,.25); border-radius:16px; padding:20px 22px; margin-top:10px;">
+              <div style="font:700 9px/1 'Nunito'; letter-spacing:.14em; text-transform:uppercase; color:#C9A24B; margin-bottom:10px;">{{ t.tarotAdvice }}</div>
+              <div style="font:400 14px/1.8 'Nunito'; color:#D8CFEA; white-space:pre-line;">{{ tarot.advice }}</div>
+            </div>
+
+            <div style="text-align:center; margin-top:32px;">
+              <button onClick="{{ resetTarot }}" style="background:none; border:1px solid rgba(201,162,75,.5); border-radius:999px; padding:10px 26px; font:700 11px/1 'Nunito'; color:#C9A24B; cursor:pointer;">{{ t.tarotNewReading }}</button>
+            </div>
+          </div>
+        </sc-if>
+
+      </div>
+    </div>
+  </sc-if>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:700,&quot;height&quot;:900}}">
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.T = {
+      zh: {
+        tarotTitle:'塔羅占卜', tarotReset:'↩ 重新占卜', tarotQTitle:'此刻，你想問什麼？', tarotQSub:'靜下心，讓問題自然浮現 — 這是你此刻最真實的疑問', tarotQPlaceholder:'例如：這份新工作適合我嗎？', tarotDraw:'抽卡 →', tarotSelecting:'正在為你選擇合適的牌陣…', tarotSkyTitle:'✶ 此刻的天空', tarotSkySun:'太陽', tarotSkyMoon:'月亮', tarotSkyPhase:'月相', tarotSkyWaxing:'漸盈 — 適合推進、開始', tarotSkyWaning:'漸虧 — 適合收尾、放下', tarotSkyToday:'此刻主牌', tarotSkyLit:'太陽每 10 天換一個區間，這張牌會跟著換；月亮主牌約每 18 小時換一次。', tarotSkySpan:(a,b)=>`當值 ${a}–${b}`, tarotSkyMoonCard:'月亮牌', tarotCutTitle:'切牌', tarotCutSub:'憑直覺選一個位置切開牌堆 — 這會真的改變接下來的牌序', tarotCutDone:'已切牌', tarotBreathe:'跟著光呼吸', tarotBreatheSub:'吸氣四拍，吐氣四拍。把問題放在心上，其餘的先放下。', tarotConfirm:'確認選牌', tarotRevealAll:'全部翻開', tarotReading:'正在為你解讀…', tarotAnswer:'✦ 直接的答案', tarotTiming:'⏳ 時間指引', tarotFullReading:'完整解讀', tarotAdvice:'✦ 給你的建議', tarotNewReading:'↩ 開始新的占卜', tarotSelectedOf:(n,m)=>`已選 ${n} / ${m}`,
+      },
+      en: {
+        tarotTitle:'Tarot Reading', tarotReset:'↩ New Reading', tarotQTitle:'What do you want to ask, right now?', tarotQSub:'Take a breath and let the question surface — this is your most honest question right now', tarotQPlaceholder:'e.g. Is this new job right for me?', tarotDraw:'Draw →', tarotSelecting:'Choosing the right spread for you…', tarotSkyTitle:'✶ The Sky Right Now', tarotSkySun:'Sun', tarotSkyMoon:'Moon', tarotSkyPhase:'Phase', tarotSkyWaxing:'Waxing — favours starting and building', tarotSkyWaning:'Waning — favours finishing and letting go', tarotSkyToday:'Card of the Hour', tarotSkyLit:'The Sun changes decan every 10 days and this card changes with it; the Moon card turns over roughly every 18 hours.', tarotSkySpan:(a,b)=>`ruling ${a}–${b}`, tarotSkyMoonCard:'Moon card', tarotCutTitle:'Cut the Deck', tarotCutSub:'Pick a point to cut, by instinct — this genuinely changes the order of what comes next', tarotCutDone:'Deck cut', tarotBreathe:'Breathe with the light', tarotBreatheSub:'In for four, out for four. Hold the question, and let everything else go.', tarotConfirm:'Confirm Selection', tarotRevealAll:'Reveal All', tarotReading:'Reading your cards…', tarotAnswer:'✦ The Direct Answer', tarotTiming:'⏳ On Timing', tarotFullReading:'Full Reading', tarotAdvice:'✦ Advice For You', tarotNewReading:'↩ Start a New Reading', tarotSelectedOf:(n,m)=>`${n} / ${m} selected`,
+      },
+    };
+    let lang = 'zh';
+    try { lang = localStorage.getItem('tarot-lang') || 'zh'; } catch (e) {}
+    this.state = {
+      lang, tarotOpen:true, tarotPhase:'question', tarotQuestion:'', tarotAllCards:null, tarotSpread:null,
+      tarotSelected:[], tarotDrawn:[], tarotReading:null, tarotError:'', tarotDraft:'', tarotSky:null, tarotCutAt:null,
+    };
+  }
+
+  setLang(lang) {
+    this.setState({ lang });
+    try { localStorage.setItem('tarot-lang', lang); } catch (e) {}
+  }
+
+  // ── Tarot ──────────────────────────────────────────────────────────────────
+  shuffle(arr) {
+    const a = [...arr];
+    for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
+    return a;
+  }
+
+  openTarot() {
+    this.setState({ tarotOpen: true });
+    // the sky moves, so refetch every open rather than caching for the session
+    fetch('/api/tarot/sky').then(r => r.json())
+      .then(sky => { if (!sky.error) this.setState({ tarotSky: sky }); })
+      .catch(() => {});
+    if (this.state.tarotAllCards) return;
+    fetch('tarot-cards.json')
+      .then(r => r.json())
+      .then(cards => this.setState({ tarotAllCards: this.shuffle(cards) }))
+      .catch(() => this.setState({ tarotError: '無法載入卡牌資料' }));
+  }
+
+  // Cutting genuinely re-orders the deck: everything above the cut goes to the bottom, exactly
+  // like lifting the top half of a physical deck and placing it underneath. The cards you then
+  // pick from really are different because of where you cut.
+  cutDeck(fraction) {
+    this.setState(prev => {
+      const deck = prev.tarotAllCards || [];
+      if (!deck.length) return { tarotPhase: 'select-cards' };
+      const at = Math.max(1, Math.min(deck.length - 1, Math.round(deck.length * fraction)));
+      return { tarotAllCards: [...deck.slice(at), ...deck.slice(0, at)], tarotCutAt: fraction, tarotPhase: 'select-cards' };
+    });
+  }
+
+  resetTarot() {
+    this.setState({ tarotPhase: 'question', tarotQuestion: '', tarotDraft: '', tarotSpread: null, tarotSelected: [], tarotDrawn: [], tarotReading: null, tarotError: '', tarotCutAt: null });
+  }
+
+  submitTarotQuestion() {
+    const q = (this.state.tarotDraft || '').trim();
+    if (!q) return;
+    this.setState({ tarotQuestion: q, tarotPhase: 'selecting-spread', tarotError: '' });
+    // Hold the centering screen for at least one full breath cycle. The spread call usually
+    // returns faster than this, so the pause is ritual rather than waiting — but if the call is
+    // slow, it simply finishes first and nothing extra is added.
+    const BREATH_MS = 8000;
+    const settled = Date.now();
+    const holdBreath = (apply) => {
+      const remaining = Math.max(0, BREATH_MS - (Date.now() - settled));
+      setTimeout(apply, remaining);
+    };
+    fetch('/api/tarot/select-spread', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ question: q }),
+    })
+      .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+      .then(data => holdBreath(() => this.setState({ tarotSpread: data, tarotPhase: 'cut' })))
+      .catch(() => holdBreath(() => this.setState({
+        tarotSpread: { spread_type: 'three_card', card_count: 3, positions: [
+          { name: '過去', meaning: '導致現況的能量' }, { name: '現在', meaning: '目前活躍的能量' }, { name: '未來', meaning: '若能量延續的走向' },
+        ] },
+        tarotPhase: 'cut',
+      })));
+  }
+
+  selectTarotCard(card) {
+    this.setState(prev => {
+      const max = prev.tarotSpread ? prev.tarotSpread.card_count : 3;
+      if (prev.tarotSelected.length >= max || prev.tarotSelected.find(c => c.id === card.id)) return {};
+      return { tarotSelected: [...prev.tarotSelected, card] };
+    });
+  }
+  deselectTarotCard(id) {
+    this.setState(prev => ({ tarotSelected: prev.tarotSelected.filter(c => c.id !== id) }));
+  }
+
+  confirmTarotSelection() {
+    const s = this.state;
+    if (!s.tarotSpread || s.tarotSelected.length !== s.tarotSpread.card_count) return;
+    const drawn = s.tarotSelected.map(c => ({ ...c, isReversed: Math.random() < 0.33, isRevealed: false }));
+    this.setState({ tarotDrawn: drawn, tarotSelected: [], tarotPhase: 'drawn' });
+  }
+
+  revealTarotCard(i) {
+    this.setState(prev => {
+      const drawn = prev.tarotDrawn.map((c, j) => j === i ? { ...c, isRevealed: true } : c);
+      return { tarotDrawn: drawn };
+    }, () => { if (this.state.tarotDrawn.every(c => c.isRevealed)) this.fetchTarotReading(); });
+  }
+  revealAllTarot() {
+    this.setState(prev => ({ tarotDrawn: prev.tarotDrawn.map(c => ({ ...c, isRevealed: true })) }), () => this.fetchTarotReading());
+  }
+
+  fetchTarotReading() {
+    const s = this.state;
+    if (s.tarotPhase === 'reading' || s.tarotPhase === 'complete') return;
+    this.setState({ tarotPhase: 'reading', tarotError: '' });
+    fetch('/api/tarot/reading', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ question: s.tarotQuestion, spread_type: s.tarotSpread.spread_type, positions: s.tarotSpread.positions, drawn_cards: s.tarotDrawn }),
+    })
+      .then(r => { if (!r.ok) return r.json().then(d => { throw new Error(d.error || ('HTTP ' + r.status)); }); return r.json(); })
+      .then(data => this.setState({ tarotReading: data, tarotPhase: 'complete' }))
+      .catch(e => this.setState({ tarotPhase: 'drawn', tarotError: '解讀失敗：' + (e.message === 'Failed to fetch' ? '無法連到 server' : e.message) }));
+  }
+
+  componentDidMount() { this.openTarot(); }
+
+  renderVals() {
+    const s = this.state, t = this.T[s.lang];
+    return {
+      t,
+      tarotOpen: s.tarotOpen,
+      onLangZh: () => this.setLang('zh'), onLangEn: () => this.setLang('en'),
+      resetTarot: () => this.resetTarot(),
+      tarot: (() => {
+        const spread = s.tarotSpread;
+        const phase = s.tarotPhase;
+        const cardBackBase = { background:'radial-gradient(circle at 50% 40%, #241a44 0%, #14102c 70%)', border:'1.5px solid #C9A24B', borderRadius:'12px', display:'flex', alignItems:'center', justifyContent:'center', color:'#C9A24B', fontSize:'20px' };
+
+        const cardName = (c) => (s.lang === 'zh' && c.nameZh) ? c.nameZh : c.name;
+
+        const deck = (s.tarotAllCards || []).map(c => {
+          const sel = s.tarotSelected.some(sc => sc.id === c.id);
+          return {
+            id: c.id, name: cardName(c), image: 'tarot-cards/' + c.image.split('/').pop(),
+            isSelected: sel,
+            onClick: () => sel ? this.deselectTarotCard(c.id) : this.selectTarotCard(c),
+            cardBackStyle: { ...cardBackBase, width:'44px', height:'70px', cursor:'pointer', flexShrink:0, transition:'transform .15s ease, box-shadow .15s ease',
+              opacity: sel ? 1 : 0.85, transform: sel ? 'translateY(-8px)' : 'none', boxShadow: sel ? '0 0 0 2px #E8C97A, 0 8px 20px rgba(0,0,0,.5)' : 'none' },
+          };
+        });
+
+        const positions = spread ? spread.positions : [];
+        const drawnSlots = s.tarotDrawn.map((c, i) => {
+          const pos = positions[i] || {};
+          return {
+            idx: i, posName: pos.name || '', posMeaning: pos.meaning || '',
+            isRevealed: c.isRevealed, isReversed: c.isReversed, name: cardName(c),
+            image: 'tarot-cards/' + c.image.split('/').pop(),
+            cardBackStyle: { ...cardBackBase, width:'100px', height:'160px', overflow:'hidden', cursor: c.isRevealed ? 'default' : 'pointer' },
+            imgStyle: { width:'100%', height:'100%', objectFit:'cover', borderRadius:'11px', transform: c.isReversed ? 'rotate(180deg)' : 'none' },
+            onReveal: () => { if (!c.isRevealed) this.revealTarotCard(i); },
+          };
+        });
+
+        const analyses = (s.tarotReading && s.tarotReading.card_analyses) || [];
+        const readingCards = s.tarotDrawn.map((c, i) => {
+          const pos = positions[i] || {};
+          const a = analyses.find(x => x.index === i) || {};
+          return {
+            idx: i, name: cardName(c), isReversed: c.isReversed, posName: pos.name || '',
+            image: 'tarot-cards/' + c.image.split('/').pop(),
+            imgStyle: { width:'100%', height:'100%', objectFit:'cover', borderRadius:'9px', transform: c.isReversed ? 'rotate(180deg)' : 'none' },
+            interpretation: a.interpretation || '',
+          };
+        });
+
+        const tarotLangOn = { font:"700 11px/1 'Nunito'", padding:'6px 12px', border:'none', cursor:'pointer', background:'#C9A24B', color:'#1A1030' };
+        const tarotLangOff = { font:"700 11px/1 'Nunito'", padding:'6px 12px', border:'none', cursor:'pointer', background:'transparent', color:'#9A8DBE' };
+
+        return {
+          phase, question: s.tarotQuestion,
+          langZhStyle: s.lang === 'zh' ? tarotLangOn : tarotLangOff,
+          langEnStyle: s.lang === 'en' ? tarotLangOn : tarotLangOff,
+          isQuestion: phase === 'question',
+          isSelectingSpread: phase === 'selecting-spread',
+          isCutting: phase === 'cut',
+          // 12 slivers standing in for the deck; clicking one cuts there
+          cutSlots: Array.from({ length: 12 }, (_, i) => ({
+            idx: i,
+            onCut: () => this.cutDeck((i + 1) / 13),
+            style: { width:'26px', height:'112px', marginLeft: i ? '-9px' : '0', borderRadius:'6px',
+              border:'1px solid rgba(201,162,75,.45)', background:'linear-gradient(160deg,#2A1B4A,#1A1030)',
+              cursor:'pointer', transition:'transform .18s ease, box-shadow .18s ease', position:'relative', zIndex: i },
+          })),
+          hasSky: !!s.tarotSky,
+          sky: s.tarotSky ? (() => {
+            const k = s.tarotSky;
+            const SIGN_ZH = { Aries:'牡羊', Taurus:'金牛', Gemini:'雙子', Cancer:'巨蟹', Leo:'獅子', Virgo:'處女',
+              Libra:'天秤', Scorpio:'天蠍', Sagittarius:'射手', Capricorn:'摩羯', Aquarius:'水瓶', Pisces:'雙魚' };
+            const sgn = (o) => s.lang === 'zh' ? `${SIGN_ZH[o.sign] || o.sign}座 ${o.degree.toFixed(0)}°` : `${o.degree.toFixed(0)}° ${o.sign}`;
+            const PHASE_EN = { '新月':'New Moon','眉月':'Waxing Crescent','上弦月':'First Quarter','盈凸月':'Waxing Gibbous',
+              '滿月':'Full Moon','虧凸月':'Waning Gibbous','下弦月':'Last Quarter','殘月':'Waning Crescent' };
+            return {
+              sunText: sgn(k.sun), moonText: sgn(k.moon),
+              phaseText: s.lang === 'zh' ? k.phaseName : (PHASE_EN[k.phaseName] || k.phaseName),
+              illumination: k.illumination,
+              tideText: k.waxing ? t.tarotSkyWaxing : t.tarotSkyWaning,
+              cardName: k.sunCard ? (s.lang === 'zh' ? k.sunCard.nameZh : k.sunCard.name) : '',
+              cardTitle: k.sunCard ? k.sunCard.gdTitle : '',
+              cardImage: k.sunCard ? 'tarot-cards/' + k.sunCard.image.split('/').pop() : '',
+              spanText: k.sunSpan ? t.tarotSkySpan(k.sunSpan.from, k.sunSpan.to) : '',
+              hasMoonCard: !!k.moonCard,
+              moonCardName: k.moonCard ? (s.lang === 'zh' ? k.moonCard.nameZh : k.moonCard.name) : '',
+              moonCardImage: k.moonCard ? 'tarot-cards/' + k.moonCard.image.split('/').pop() : '',
+            };
+          })() : null,
+          isSelectCards: phase === 'select-cards',
+          isDrawn: phase === 'drawn',
+          isReading: phase === 'reading',
+          isComplete: phase === 'complete',
+          showReset: phase !== 'question',
+          hasError: !!s.tarotError, errorMsg: s.tarotError,
+          draft: s.tarotDraft,
+          onDraftInput: (e) => this.setState({ tarotDraft: e.target.value }),
+          onDraftKey: (e) => { if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) this.submitTarotQuestion(); },
+          onSubmitQuestion: () => this.submitTarotQuestion(),
+          canSubmit: !!(s.tarotDraft && s.tarotDraft.trim()),
+          submitBtnStyle: { marginTop:'18px', background:'linear-gradient(135deg, #C9A24B, #A8823A)', border:'none', borderRadius:'999px', padding:'12px 32px', font:"800 12px/1 'Nunito'", letterSpacing:'.08em', color:'#1A1030', cursor:'pointer', opacity: (s.tarotDraft && s.tarotDraft.trim()) ? 1 : 0.4 },
+          spreadTypeLabel: spread ? spread.spread_type : '',
+          cardCount: spread ? spread.card_count : 0,
+          selectedCount: s.tarotSelected.length,
+          selectedLabel: t.tarotSelectedOf(s.tarotSelected.length, spread ? spread.card_count : 0),
+          canConfirm: !!(spread && s.tarotSelected.length === spread.card_count),
+          confirmBtnStyle: { background:'linear-gradient(135deg, #C9A24B, #A8823A)', border:'none', borderRadius:'999px', padding:'12px 32px', font:"800 12px/1 'Nunito'", letterSpacing:'.08em', color:'#1A1030', cursor:'pointer', opacity: (spread && s.tarotSelected.length === spread.card_count) ? 1 : 0.35 },
+          onConfirmSelection: () => this.confirmTarotSelection(),
+          positions,
+          deck,
+          drawnSlots,
+          allRevealed: s.tarotDrawn.length > 0 && s.tarotDrawn.every(c => c.isRevealed),
+          hasUnrevealed: s.tarotDrawn.some(c => !c.isRevealed),
+          onRevealAll: () => this.revealAllTarot(),
+          readingCards,
+          tldr: (s.tarotReading && s.tarotReading.tldr) || '',
+          timing: (s.tarotReading && s.tarotReading.timing) || '',
+          hasTiming: !!(s.tarotReading && s.tarotReading.timing),
+          narrative: (s.tarotReading && s.tarotReading.narrative) || '',
+          narrativeParas: ((s.tarotReading && s.tarotReading.narrative) || '').split(/\n+/).filter(p => p.trim()),
+          advice: (s.tarotReading && s.tarotReading.advice) || '',
+        };
+      })(),
+
+    };
+  }
+}
+</script>
+</body>
+</html>
